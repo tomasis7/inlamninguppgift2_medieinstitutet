@@ -21,3 +21,35 @@
   /* background-color: grey;
   padding: 10px; */
 }
+
+
+
+/* HEADER */
+.logo {
+  display: flex;
+  max-width: 200px;
+  align-items: center;
+  
+}
+
+.logotext {
+  display: flex;
+  flex-direction: column;
+  border: #000000 15px solid;
+  box-sizing: border-box;
+  max-height: 255px;
+
+  
+}
+
+.logolopp {
+  font-size: 10rem;
+  font-weight: 700;
+  margin: 0;
+  max-height: 50px;
+}
+
+.logochris {
+  font-size: 5rem;
+  margin: 0;
+}
