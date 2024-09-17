@@ -3,6 +3,7 @@
   flex-direction: column;
   position: relative;
 }
+<<<<<<< HEAD
 .navbar {
   display: flex;
   flex-direction: column;
@@ -21,3 +22,21 @@
   /* background-color: grey;
   padding: 10px; */
 }
+=======
+
+.logo {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.logotext {
+  border: black 20px solid;
+  border-radius: 5px;
+}
+
+.loppen {
+  font-size: 10rem;
+}
+
+>>>>>>> div-header
