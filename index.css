@@ -3,3 +3,19 @@ div.container {
   flex-direction: column;
   position: relative;
 }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.logotext {
+  border: black 20px solid;
+  border-radius: 5px;
+}
+
+.loppen {
+  font-size: 10rem;
+}
+
