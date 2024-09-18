@@ -26,20 +26,36 @@
         div.example {
           display: none;
         }
+        div.nav {
+          display: none;
+          flex-direction: column;
+        }
       }
       @media screen and (min-width: 376px) {
         div.example {
           display: none;
+        }
+        div.nav {
+          display: flex;
+          flex-direction: row;
         }
       }
       @media screen and (min-width: 744px) {
         div.example {
           display: none;
         }
+        div.nav {
+          display: flex;
+          flex-direction: row;
+        }
       }
       @media screen and (min-width: 1100px) {
         div.example {
           display: none;
+        }
+        div.nav {
+          display: flex;
+          flex-direction: row;
         }
       }
     </style>
@@ -63,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="menu">Menu<i class="bi bi-list"></i></div>
+      <div class="menu">MENU<i class="bi bi-list"></i></div>
       <div class="nav">
         <div class="kalender">KALENDER</div>
         <div class="genre">GENRE</div>
