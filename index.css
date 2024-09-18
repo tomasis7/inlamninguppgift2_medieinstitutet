@@ -1,3 +1,13 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --font: Arial, Helvetica, sans-serif;
+  --f-bold: bold;
+}
+
+body {
+  background-color: var(--blue);
+}
 
 .container {
   display: flex;
@@ -9,7 +19,7 @@
   flex-direction: column;
   position: relative;
   border: 1px solid #000000;
-  background-color: gray;
+  /* background-color: gray; */
 }
 .kalender {
   width: 100%;
@@ -90,19 +100,11 @@
   border: 1px solid #000000;
 }
 
-
-
 /* HEADER for MOBILE 375px wide*/
 .headerlogo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  display: flex;
-  max-width: 375px;
-  justify-content: center;
   
 }
 
@@ -114,8 +116,16 @@
   border: #000000 8px solid;
   border-radius: 5px;
   box-sizing: border-box;
-  width: 250px;
-  height: 90px;
+  max-height: 255px;
+
+  
+}
+
+.logolopp {
+  font-size: 10rem;
+  font-weight: 700;
+  margin: 0;
+  max-height: 50px;
 }
 
 .logochris {
