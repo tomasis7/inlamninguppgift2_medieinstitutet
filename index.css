@@ -225,6 +225,15 @@ h3 {
   background-color: #c4d5ed;
 }
 
+.bluebox {
+  width: 50%;
+  height: 90px;
+  border: #000000 8px solid;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #c4d5ed;
+}
+
 .logolopp h1 {
   font-size: 52px;
   font-weight: 1000;
