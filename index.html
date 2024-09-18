@@ -21,6 +21,90 @@
       src="https://kit.fontawesome.com/9e70829e25.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @media screen and (max-width: 375px) {
+        div.menu_inside {
+          display: none;
+        }
+        .nav {
+          display: none;
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 376px) {
+        .menu_inside {
+          display: flex;
+        }
+        .nav {
+          display: flex;
+          flex-direction: row;
+        }
+        .menu {
+          display: none;
+        }
+        .genre {
+          display: none;
+        }
+        .billeder {
+          display: none;
+        }
+        .info {
+          display: none;
+        }
+        .kontakt {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 744px) {
+        .menu_inside {
+          display: flex;
+        }
+        .nav {
+          display: flex;
+          flex-direction: row;
+        }
+        .menu {
+          display: none;
+        }
+        .genre {
+          display: none;
+        }
+        .billeder {
+          display: none;
+        }
+        .info {
+          display: none;
+        }
+        .kontakt {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1100px) {
+        .menu_inside {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          flex-direction: row;
+        }
+        .menu {
+          display: none;
+        }
+
+        .genre {
+          display: flex;
+        }
+        .billeder {
+          display: flex;
+        }
+        .info {
+          display: flex;
+        }
+        .kontakt {
+          display: flex;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -41,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="menu">Menu<i class="bi bi-list"></i></div>
+      <div class="menu">MENU<i class="bi bi-list"></i></div>
       <div class="nav">
         <div class="kalender">KALENDER</div>
         <div class="genre">GENRE</div>
@@ -49,6 +133,7 @@
         <div class="info">INFO</div>
         <div class="kontakt">KONTAKT</div>
         <div class="sog">SOG</div>
+        <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
       </div>
 
       <div class="section">
