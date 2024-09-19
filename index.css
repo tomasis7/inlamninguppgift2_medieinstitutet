@@ -19,13 +19,14 @@ h3 {
   font-weight: var(--f-bold);
 }
 
-a {
+/*a {
   text-decoration: inherit;
   font-family: var(--font);
   font-weight: var(--f-bold);
   line-height: 28.8px;
   color: #000000;
 }
+  */
 .container {
   display: flex;
   flex-direction: column;
@@ -83,6 +84,11 @@ a {
   overflow: hidden;
 
   transition: max-height 0.2s ease-out;
+  text-decoration: inherit;
+  font-family: var(--font);
+  font-weight: var(--f-bold);
+  line-height: 28.8px;
+  color: #000000;
 }
 .kalender {
   /* width: 100%;
@@ -389,4 +395,17 @@ a {
 
 .searchbar button:hover {
   background: #bbb;
+}
+
+.infolink {
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+}
+
+.info_container {
+  border: #000000 8px solid;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
