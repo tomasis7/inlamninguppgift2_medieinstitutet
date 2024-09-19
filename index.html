@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <title>Loopen</title>
+    <title>Loppen.dk</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link href="index.css" rel="stylesheet" />
-    <link href="index.scss" rel="stylesheet" />
+    <!-- <link href="index.scss" rel="stylesheet" /> -->
     <script
       src="https://kit.fontawesome.com/9e70829e25.js"
       crossorigin="anonymous"
@@ -28,9 +28,11 @@
         }
         .nav {
           display: none flex;
-          flex-direction: column;
+          /* flex-direction: column; */
           max-height: 0;
           overflow: hidden;
+          padding-left: 160px;
+          padding-right: 160px;
 
         }
       }
@@ -40,7 +42,7 @@
         }
         .nav {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           /* max-height:0; */
           overflow:visible;
 
@@ -152,11 +154,11 @@
 
         <div class="nav">
           <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
+            <button class="dropbtn">KALENDAR</button>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">OKTOBER</a>
+              <a href="#">NOVEMBER</a>
+              <a href="#">DECEMBER</a>
             </div>
           </div>
 
@@ -167,78 +169,88 @@
           <div class="sog">
             <button class="searchbtn" onclick="openSearch()">SØG</button>
           </div>
-          <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
+          <div class="menu_inside">MENU<i class="bi bi-list"></i></div>
         </div>
       </div>
 
       <div class="shows">
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">
+              bodega <span class="countrycode">(us)</span>
+            </h2>
+            <p class="supporting">
+              the klittens <span class="countrycode">(nl)</span>
+            </p>
+          </div>
+        </div>
 
-            <div class="band">
-              <div class="subsection_top">
-                <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                <div class="sale">forsalg: 180kr &#9654; køb</div>
-              </div>
-              <div class="subsection_bottom">
-                <h2 class="headliner">bodega <span class="countrycode">(us)</span></h2>
-                <p class="supporting">the klittens <span class="countrycode">(nl)</span></p>
-              </div>
-            </div>
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">
+              unida <span class="countrycode">(us)</span>
+            </h2>
+            <p class="supporting">
+              bürner <span class="countrycode">(se)</span>
+            </p>
+          </div>
+        </div>
 
-            <div class="band">
-                <div class="subsection_top">
-                  <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                  <div class="sale">forsalg: 180kr &#9654; køb</div>
-                </div>
-                <div class="subsection_bottom">
-                  <h2 class="headliner">unida <span class="countrycode">(us)</span></h2>
-                  <p class="supporting">bürner <span class="countrycode">(se)</span></p>
-                </div>
-              </div>
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">
+              den syvende søn <span class="countrycode"></span>
+            </h2>
+          </div>
+        </div>
 
-              <div class="band">
-                <div class="subsection_top">
-                  <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                  <div class="sale">forsalg: 180kr &#9654; køb</div>
-                </div>
-                <div class="subsection_bottom">
-                  <h2 class="headliner">den syvende søn <span class="countrycode"></span></h2>
-                </div>
-              </div>
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">filuka <span class="countrycode"></span></h2>
+            <p class="supporting">prosa <span class="countrycode"></span></p>
+          </div>
+        </div>
 
-              <div class="band">
-                <div class="subsection_top">
-                  <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                  <div class="sale">forsalg: 180kr &#9654; køb</div>
-                </div>
-                <div class="subsection_bottom">
-                  <h2 class="headliner">filuka <span class="countrycode"></span></h2>
-                  <p class="supporting">prosa <span class="countrycode"></span></p>
-                </div>
-              </div>
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">
+              j. bernardt <span class="countrycode">(be)</span>
+            </h2>
+          </div>
+        </div>
 
-              <div class="band">
-                <div class="subsection_top">
-                  <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                  <div class="sale">forsalg: 180kr &#9654; køb</div>
-                </div>
-                <div class="subsection_bottom">
-                  <h2 class="headliner">j. bernardt <span class="countrycode">(be)</span></h2>
-                </div>
-              </div>
-
-              <div class="band">
-                <div class="subsection_top">
-                  <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
-                  <div class="sale">forsalg: 180kr &#9654; køb</div>
-                </div>
-                <div class="subsection_bottom">
-                  <h2 class="headliner">jenny don't and the spurs <span class="countrycode">(us)</span></h2>
-                </div>
-              </div>
+        <div class="band">
+          <div class="subsection_top">
+            <div class="date">FREDAG 27. SEP 2024 - KL 21.00</div>
+            <div class="sale">forsalg: 180kr &#9654; køb</div>
+          </div>
+          <div class="subsection_bottom">
+            <h2 class="headliner">
+              jenny don't and the spurs <span class="countrycode">(us)</span>
+            </h2>
+          </div>
+        </div>
       </div>
-      
-
-     
 
       <div class="footer">
         <div class="socialmedia">

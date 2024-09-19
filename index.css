@@ -26,7 +26,7 @@ a {
   line-height: 28.8px;
   color: #000000;
 }
-  */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ a {
 
 .nav {
   /* position: relative; */
-  /* max-width: 375px; */
+  max-height: 375px;
   width: 100%;
   /* height: 100%; */
   justify-content: space-around;
@@ -89,12 +89,14 @@ a {
   font-weight: var(--f-bold);
   line-height: 28.8px;
   color: #000000;
+  margin-top: 10px;
 }
 .dropbtn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: var(--blue);
+  color: var(--black);
+  font-weight: var(--f-bold);
+  padding: 10px;
+  font-size: 24px;
   border: none;
 }
 
@@ -128,7 +130,7 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: darkgrey;
 }
 
 .genre {
@@ -232,7 +234,7 @@ a {
   font-weight: var(--f-bold);
   /* position: absolute; */
   background-color: var(--blue);
-  border: .5px solid #000000;
+  border: 0.5px solid #000000;
   box-sizing: border-box;
   align-items: center;
 }
@@ -253,7 +255,6 @@ a {
 }
 .subsection_bottom {
   width: 100%;
-  
 }
 
 .headliner {
@@ -276,7 +277,6 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
-
 }
 
 .date {
