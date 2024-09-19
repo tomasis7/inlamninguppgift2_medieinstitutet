@@ -56,9 +56,9 @@ a {
 .active:hover {
   background-color: #ccc;
 }
-.menu:hover {
+/* .menu:hover {
   background-color: #ccc;
-}
+} */
 /* .bi {
   width: 100%;
   height: 100%;
@@ -71,7 +71,8 @@ a {
 .nav {
   /* position: relative; */
   /* max-width: 375px; */
-  width: 80%;
+  width: 100%;
+  /* height: 100%; */
   justify-content: space-around;
 
   position: relative;
