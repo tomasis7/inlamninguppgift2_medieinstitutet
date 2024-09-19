@@ -283,3 +283,18 @@ h3 {
   margin-left: 10px;
 }
 
+.kontaktpage {
+  border: #000000 8px solid;
+  border-radius: 5px;
+  padding: 10px 0px 0px 10px;
+}
+
+.contactheading {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.contactname {
+  margin-bottom: 0;
+}
