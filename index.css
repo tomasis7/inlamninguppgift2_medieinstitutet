@@ -39,8 +39,8 @@ h3 {
   line-height: 28.8px;
   word-wrap: break-word;
   background-color: var(--blue);
-  padding: 10px;
-  margin: 30px;
+  /* padding: 10px;
+  margin: 30px; */
   border: 8px solid #000000;
   border-radius: 5px;
   box-sizing: border-box;
