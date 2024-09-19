@@ -33,7 +33,6 @@ a {
   justify-content: center;
 }
 
-
 .menu {
   cursor: pointer;
   display: flex;
@@ -54,8 +53,10 @@ a {
   border-radius: 5px;
   box-sizing: border-box;
 }
-.active,
-.collapsible:hover {
+.active:hover {
+  background-color: #ccc;
+}
+.menu:hover {
   background-color: #ccc;
 }
 /* .bi {
@@ -80,7 +81,7 @@ a {
   padding: 30px; */
   box-sizing: border-box;
   overflow: hidden;
-  max-height: 0;
+
   transition: max-height 0.2s ease-out;
 }
 .kalender {

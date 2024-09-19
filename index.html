@@ -30,6 +30,7 @@
         .nav {
           display: none;
           flex-direction: column;
+          max-height: 0;
         }
       }
       @media screen and (min-width: 376px) {
@@ -37,8 +38,9 @@
           display: flex;
         }
         .nav {
-          display: flex;
+          display: none;
           flex-direction: row;
+          max-height: 100%;
         }
         .menu {
           display: none;
