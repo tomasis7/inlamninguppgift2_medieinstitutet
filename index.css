@@ -298,3 +298,83 @@ h3 {
 .contactname {
   margin-bottom: 0;
 }
+
+
+
+
+
+
+.searchbtn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: var(--f-bold);
+  cursor: pointer;
+}
+
+.searchbtn:hover {
+  color: #343434;
+}
+
+.searchbar {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000ef;
+}
+
+.searchbar-open {
+  position: relative;
+  top: 35%;
+  width: 80%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: auto;
+}
+
+.searchbar .closebtn {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchbar .closebtn:hover {
+  color: #ccc;
+  transform: scale(1.1);
+}
+
+.searchbar input[type=text] {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  float: left;
+  width: 60%;
+  background: white;
+  border: #000000 solid 0.4px;
+  opacity: 1;
+}
+
+.searchbar input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.searchbar button {
+  width: 40%;
+  padding: 15px;
+  background: #ffffff;
+  font-size: 20px;
+  border: #000000 solid 0.4px;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: #bbb;
+}
