@@ -19,57 +19,189 @@
     <link href="index.scss" rel="stylesheet" />
   </head>
   <body>
+
+    <script
+    src="https://kit.fontawesome.com/9e70829e25.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    
+    @media screen and (max-width: 375px) {
+      .menu_inside {
+        display: none;
+      }
+      .nav {
+        display: none;
+        flex-direction: column;
+      }
+    }
+    @media screen and (min-width: 376px) {
+      .menu_inside {
+        display: flex;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .menu {
+        display: none;
+      }
+      .genre {
+        display: none;
+      }
+      .billeder {
+        display: none;
+      }
+      .info {
+        display: none;
+      }
+      .kontakt {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 744px) {
+      .menu_inside {
+        display: flex;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .menu {
+        display: none;
+      }
+      .genre {
+        display: none;
+      }
+      .billeder {
+        display: none;
+      }
+      .info {
+        display: none;
+      }
+      .kontakt {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1100px) {
+      .menu_inside {
+        display: none;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .menu {
+        display: none;
+      }
+
+      .genre {
+        display: flex;
+      }
+      .billeder {
+        display: flex;
+      }
+      .info {
+        display: flex;
+      }
+      .kontakt {
+        display: flex;
+      }
+    }
+  
+  @media screen and (max-width: 744px) {
+    .bluebox {
+        display: none;
+      }
+      
+  }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="headerlogo">
+        <div class="logo">
+          <div class="logoimg" id="loppe">
+            <img src="assets/loppelogonew.svg" alt="loppen logo" />
+          </div>
+          <div class="logotext">
+            <div class="logolopp">
+              <h1>LOPPEN</h1>
+            </div>
+            <div class="logochris">
+              <p>CHRISTIANIA</p>
+            </div>
+        </div>
+        <div class="bluebox">
+        </div>
+      </div>
+    </div>
+
+    <div id="loppensearchbar" class="searchbar">
+      <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
+      <div class="searchbar-open">
+        <form action="toTheSearchGnomes">
+          <input type="text" name="search">
+          <button type="submit">SØG</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="menu">MENU<i class="bi bi-list"></i></div>
+    <div class="nav">
+      <div class="kalender">KALENDER</div>
+      <div class="genre">GENRE</div>
+      <div class="billeder">BILLEDER</div>
+      <div class="info"><a href="info.html">INFO</a></div>
+      <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
+      <div class="sog"><button class="searchbtn" onclick="openSearch()">SØG</button></div>
+      <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
+    </div>
     <div class="info_container">
-      <h1>INFO FOR ALL VISITORS:</h1></p>
+      <h2>INFO FOR ALL VISITORS:</h2>
 <p>	Opening hours:</p>
 <p>Sunday-Monday: 19.00</p>
 <p>Tuesday-Thursday: 20.30</p>
 <p>Friday-Saturday: 21.00 </p>
 <p>Music starts approximately 1 hour after doors open</p>
-<p> </p>
 <p>We accept international credit cards.<br />
 	There's no age restriction at Loppen unless noticed in the event description. Purchase of alcholic beverages is only allowed by adults (+18).</p>
 <p> </p>
-<p><strong>Handicapadgang</strong></p>
+<p class="contactheading">Handicapadgang</p>
 <p>Det er muligt at medtage handicaphjælper/ledsager. Vi er placeret på 1. sal og har desværre ikke personelevator eller lift, men tag kontakt til os i god tid, så vi kan drøfte muligheder for adgang. Selve koncertsalen er niveaufri, og der er rampe til toiletfaciliteterne, og barpersonalet vil være behjælpelig med servering. Kontakt os på telefon 32578422 eller <a href="mailto:loppen@loppen.dk">loppen@loppen.dk</a> </p>
 <p> </p>
-<p><strong>Aflysning</strong></p>
+<p class="contactheading">Aflysning</p>
 <p>I tilfælde af koncertaflysning refunderes billetter købt på internettet automatisk hos forsalgsudbyder.</p>
 <p> </p>
-<p><strong>Transport</strong></p>
+<p class="contactheading">Transport</p>
 <p>Bus: Linje 9A til Prinsessegade / Linje 2A + 350S til Christianshavns Torv</p>
 <p>Metro: Christianshavn</p>
 <p> </p>
-<p><strong>Officielle links og dokumenter</strong></p>
-<p>	 </p>
-<p><a href="http://www.loppen.dk">Persondatapolitik</a></p>
-<p><a data-mce-href="/sites/default/files/Vedt%C3%A6gter%20for%20Musikforeningen%20Loppen%202015.pdf" href="http://loppen.dk/sites/default/files/Vedt%C3%A6gter%20for%20Musikforeningen%20Loppen%202015.pdf" title="Vedtægter 2015">Vedtægter</a></p>
-<p><a href="/sites/default/files/Loppen__RammeaftaleStrategi_2022-2024.pdf" title="Loppens rammeaftale 2022-2024">Loppens rammeaftale 2022-2024</a></p>
-<p><a href="/sites/default/files/Loppens%20%C3%85rsrapport%202022.pdf" title="Loppens årsrapport for 2022">Loppens årsrapport for 2022</a></p>
-<p><a href="/sites/default/files/Loppens%20%C3%83%C2%A5rsrapport%202023%20Ver.A.pdf" title="Loppens årsrapport for 2023">Loppens årsrapport for 2023</a></p>
-<p><a href="/sites/default/files/Loppens%20bestyrelsesmedlemmer%202024.pdf">Loppens bestyrelsesmedlemmer 2024</a></p>
-<p><a href="/sites/default/files/Regnskab%20for%20indsamlingen%20Red%20Spillestedet%20Loppen.pdf" title="Regnskab for Indsamlingen &quot;Red Spillestedet Loppen&quot;">Regnskab for Indsamlingen "Red Spillestedet Loppen"</a><br />
-	 </p>
-<p></a></p>
-<p>	<strong>Last but not least... NO FUCKING HARD DRUGS!</strong></p>
-<p> </p>
-<p>Tjek Loppens julekalender 2014: <a data-mce-href="http://jul.loppen.dk/" href="http://jul.loppen.dk/" target="_blank">http://jul.loppen.dk/</a></p>
+<p class="contactheading">Officielle links og dokumenter</p>
+<p><a class="infolink" href="http://www.loppen.dk">Persondatapolitik</a></p>
+<p><a class="infolink" href="http://loppen.dk/sites/default/files/Vedt%C3%A6gter%20for%20Musikforeningen%20Loppen%202015.pdf" title="Vedtægter 2015">Vedtægter</a></p>
+<p><a class="infolink" href="/sites/default/files/Loppen__RammeaftaleStrategi_2022-2024.pdf" title="Loppens rammeaftale 2022-2024">Loppens rammeaftale 2022-2024</a></p>
+<p><a class="infolink" href="/sites/default/files/Loppens%20%C3%85rsrapport%202022.pdf" title="Loppens årsrapport for 2022">Loppens årsrapport for 2022</a></p>
+<p><a class="infolink" href="/sites/default/files/Loppens%20%C3%83%C2%A5rsrapport%202023%20Ver.A.pdf" title="Loppens årsrapport for 2023">Loppens årsrapport for 2023</a></p>
+<p><a class="infolink" href="/sites/default/files/Loppens%20bestyrelsesmedlemmer%202024.pdf">Loppens bestyrelsesmedlemmer 2024</a></p>
+<p><a class="infolink" href="/sites/default/files/Regnskab%20for%20indsamlingen%20Red%20Spillestedet%20Loppen.pdf" title="Regnskab for Indsamlingen &quot;Red Spillestedet Loppen&quot;">Regnskab for Indsamlingen "Red Spillestedet Loppen"</a><br />
 
+<p class="contactheading">Last but not least... NO FUCKING HARD DRUGS!</p>
 
+<h2>INFO FOR BANDS</h2>
 
-
-  <h1>INFO FOR BANDS</h1>
-<p><strong></strong></p>
-<p><strong>Address:</strong></p>
+<p class="contactheading">Address:</p>
 <p>Musikforeningen Loppen</p>
 <p>Sydområdet 4b, 1. sal</p>
 <p>DK-1440 København K.</p>
 <p>Denmark</p>
 <p> </p>
-<p><strong>Email:</strong> <a href="mailto:loppen@loppen.dk">loppen@loppen.dk</a></p>
-<p><strong>Phone:</strong> + 45 32578422  </p>
+<p class="contactheading">Email:<a class="infolink"  href="mailto:loppen@loppen.dk"> loppen@loppen.dk</a></p>
+<p class="contactheading">Phone: + 45 32578422 </p>
 <p> </p>
-<p><strong>Venue specifications:</strong></p>
+<p class="contactheading">Venue specifications:</p>
 <p>Stage: W: 8.2 m, D: 3.5 m, H: 0.3 m.</p>
 <p>Ceiling: 2.7 m.</p>
 <p>Parking: Capacity for bus/night liner close to venue (power available 16 A).</p>
@@ -77,7 +209,7 @@
 <p>Capacity: 400.</p>
 <p>We do not have any inhouse backline, all backline requirements have to be advanced with the promoter.</p>
 <p> </p>
-<p><strong>Schedule:</strong></p>
+<p class="contactheading">Schedule:</p>
 <p>Get-in bands: 15.00 hours (please let venue know if you will be arriving earlier).</p>
 <p>Soundcheck: 15.00 (or earlier: let venue know) – 18.30 hours (soundcheck must finish 18.30 sharp!!!).</p>
 <p>Doors: Sunday - Thursday 20.30 / Friday - Saturday 21:00  hours.</p>
@@ -86,45 +218,44 @@
 <p>Venue closes: Sunday – Thursday latest 02.00 hours / Friday – Saturday latest 03.00 hours.</p>
 <p>Load-out bands: One hour after last show. No overnight storage facilities. </p>
 <p> </p>
-<p><strong>Backstage:</strong></p>
+<p class="contactheading">Backstage:</p>
 <p>Backstage: Nice quiet lounge/dressing room area with own fridge.</p>
 <p>Toilets: Yes, 2.</p>
 <p>Shower: Yes, 2.</p>
 <p> </p>
-<p class="header-2">Technical specifications</p>
+<p class="contactheading">Technical specifications</p>
 <p></p>
 <p> </p>
-<p><strong>Technical Contact</strong></p>
+<p class="contactheading">Technical Contact</p>
 <p>Mina</p>
 <p>Phone: +45 21821906</p>
-<p>Email: <a href="mailto:mina@loppen.dk">mina@loppen.dk</a></p>
+<p>Email: <a class="infolink">mina@loppen.dk</a></p>
 <p> </p>
 <p> </p>
-<p><strong>10Eazy LAeq 15 min. @ 103dBA</strong></p>
+<p class="contactheading">10Eazy LAeq 15 min. @ 103dBA</p>
 <p> </p>
-<p><strong>Console:</strong></p>
+<p class="contactheading">Console:</p>
 <p>1 x Midas HD96</p>
 <p>1 x Midas DL251 I/O</p>
-<p>
-	<strong>PA:  </strong> </p>
+<p class="contactheading"> PA:</p>
 <p>4 x ARCS Focus (L´acoustics).</p>
 <p>1 x X12 (L´acoustics).</p>
 <p>2 x 108p (L´acoustics).</p>
 <p>4 x SB18 (L´acoustis).</p>
 <p>2 x LA4X</p>
 <p> </p>
-<p><strong>Monitors:</strong></p>
+<p class="contactheading">Monitors:</p>
 <p>3 x X12 (L´acoustics).</p>
 <p>4 x X8 (L´acoustics).</p>
 <p>2 x LA4X</p>
-<p><strong>Drumfill:</strong></p>
+<p class="contactheading">Drumfill:</p>
 <p>2 x SB15P (L´acoustics).</p>
 <p>2 x 112P (L´acoustics). </p>
 <p> </p>
-<p><strong>Stageplan:</strong></p>
-<p><a href="/sites/default/files/DMX%20ADRESS%20AND%20SCENEVIEW.pdf" title="Stageplan + Light DMX (pdf)">Stageplan + Light DMX (pdf)</a></p>
+<p class="contactheading">Stageplan:</p>
+<p><a class="infolink" href="/sites/default/files/DMX%20ADRESS%20AND%20SCENEVIEW.pdf" title="Stageplan + Light DMX (pdf)">Stageplan + Light DMX (pdf)</a></p>
 <p> </p>
-<p><strong>Microphones:</strong></p>
+<p class="contactheading">Microphones:</p>
 <p>1 x Audix D6</p>
 <p>2 x Audix ADX51</p>
 <p>10 x Shure SM57.</p>
@@ -148,7 +279,7 @@
 <p>A sufficient amount of stands and cables.</p>
 <p> </p>
 <p> </p>
-<p><strong>Light system:</strong></p>
+<p class="contactheading">Light system:</p>
 <p>Avolites TITAN Mobile – Digital mixer.<br />
 	Avolites TITAN Mobile Wing - Fader Extension.</p>
 <p> </p>
@@ -178,23 +309,35 @@
 <p>Input: HDMI with Span option or Dual screens.</p>
 <p>	If you would like to bring your own media: Please bring the media on a usb stick.</p>
 <p> </p>
-<p><strong>DJ system:</strong></p>
+<p class="contactheading">DJ system:</p>
 <p>1 x Pioneer DJM 800 Mixer.</p>
 <p>2 x Technics 1210</p>
 <p>1 x Pioneer CDJ 850 </p>
 <p>2 x Pioneer CDJ 2000NXS2</p>
 <p> </p>
-<p><strong>We do not have any inhouse backline, all backline requirements have to be advanced with the promoter. </strong></p>
+<p class="contactheading">We do not have any inhouse backline, all backline requirements have to be advanced with the promoter.</p>
 
-  </section> <!-- /#main -->
-
+  </section>
+  
 
 
   <footer id="footer" role="contentinfo" class="clearfix">
         <p id="footer">
 		 		<img src="https://loppen.dk/Logo-transparent.png" class="logo-transparent" style="width: 167px;"/><br />
-	 	 	<a href="http://christiania.org" target="_blank">CHRISTIANIA</a><br /><a href="http://dansklive.dk/ " target="_blank">DANSK LIVE</a><br /><!--<a href="" target="_blank">KØBENHAVNS KOMMUNE</a>-->
-</p>
+	 	 	</p>
+
     </div>
+        <div class="footer">
+          <div class="socialmedia">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="footerlinks">
+            <a href="https://www.christiania.org/">Christiania</a>
+            <a href="https://dansklive.dk/">Dansk Live</a>
+          </div>
+        </div>
+    
   </body>
 </html>
