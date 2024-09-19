@@ -22,7 +22,6 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      
       @media screen and (max-width: 375px) {
         .menu_inside {
           display: none;
@@ -31,6 +30,8 @@
           display: none flex;
           flex-direction: column;
           max-height: 0;
+          overflow: hidden;
+
         }
       }
       @media screen and (min-width: 376px) {
@@ -41,6 +42,8 @@
           display: flex;
           flex-direction: row;
           /* max-height:0; */
+          overflow:visible;
+
         }
         .menu {
           display: none;
@@ -106,15 +109,13 @@
         .kontakt {
           display: flex;
         }
-      }
-    
-    @media screen and (max-width: 744px) {
-      .bluebox {
+
+
+      @media screen and (max-width: 744px) {
+        .bluebox {
           display: none;
         }
-        
-    }
-     
+      }
     </style>
   </head>
   <body>
@@ -132,31 +133,42 @@
               <div class="logochris">
                 <p>CHRISTIANIA</p>
               </div>
-          </div>
-          <div class="bluebox">
+            </div>
+            <div class="bluebox"></div>
           </div>
         </div>
-      </div>
 
-      <div id="loppensearchbar" class="searchbar">
-        <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
-        <div class="searchbar-open">
-          <form action="toTheSearchGnomes">
-            <input type="text" name="search">
-            <button type="submit">SØG</button>
-          </form>
+        <div id="loppensearchbar" class="searchbar">
+          <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
+          <div class="searchbar-open">
+            <form action="toTheSearchGnomes">
+              <input type="text" name="search" />
+              <button type="submit">SØG</button>
+            </form>
+          </div>
         </div>
-      </div>
 
-      <div class="menu">MENU<i class="bi bi-list"></i></div>
-      <div class="nav">
-        <div class="kalender">KALENDER</div>
-        <div class="genre">GENRE</div>
-        <div class="billeder">BILLEDER</div>
-        <div class="info"><a href="info.html">INFO</a></div>
-        <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
-        <div class="sog"><button class="searchbtn" onclick="openSearch()">SØG</button></div>
-        <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
+        <div class="menu">MENU<i class="bi bi-list"></i></div>
+
+        <div class="nav">
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+
+          <div class="genre">GENRE</div>
+          <div class="billeder">BILLEDER</div>
+          <div class="info"><a href="info.html">INFO</a></div>
+          <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
+          <div class="sog">
+            <button class="searchbtn" onclick="openSearch()">SØG</button>
+          </div>
+          <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
+        </div>
       </div>
 
       <div class="section">
@@ -198,6 +210,6 @@
       </div>
     </div>
 
-    <script src="javascript.js"></script> 
+    <script src="javascript.js"></script>
   </body>
 </html>
