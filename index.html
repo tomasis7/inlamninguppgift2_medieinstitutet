@@ -23,6 +23,10 @@
     ></script>
     <style>
       @media screen and (max-width: 375px) {
+        body {
+          margin:10px;
+        }
+
         .menu_inside {
           display: none;
         }
@@ -33,6 +37,7 @@
           overflow: hidden;
           padding-left: 160px;
           padding-right: 160px;
+          margin-top: -3px;
 
         }
       }
@@ -45,6 +50,7 @@
           flex-direction: column;
           /* max-height:0; */
           overflow:visible;
+          margin-top: 10px;
 
         }
         .menu {
@@ -162,14 +168,16 @@
             </div>
           </div>
 
-          <div class="genre">GENRE</div>
-          <div class="billeder">BILLEDER</div>
+          <div class="genre"><a href="#">GENRE</a></div>
+          <div class="billeder"><a href="#">BILLEDER</a></div>
           <div class="info"><a href="info.html">INFO</a></div>
           <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
           <div class="sog">
             <button class="searchbtn" onclick="openSearch()">SØG</button>
           </div>
-          <div class="menu_inside">MENU<i class="bi bi-list"></i></div>
+          <div class="menu_inside">
+            <a href="#">MENU<i class="bi bi-list"></i></a>
+          </div>
         </div>
       </div>
 

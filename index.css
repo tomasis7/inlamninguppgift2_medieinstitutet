@@ -53,6 +53,7 @@ a {
   border: 8px solid #000000;
   border-radius: 5px;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 .active:hover {
   background-color: #ccc;
@@ -71,7 +72,7 @@ a {
 
 .nav {
   /* position: relative; */
-  max-height: 375px;
+  /* max-height: 375px; */
   width: 100%;
   /* height: 100%; */
   justify-content: space-around;
@@ -89,7 +90,6 @@ a {
   font-weight: var(--f-bold);
   line-height: 28.8px;
   color: #000000;
-  margin-top: 10px;
 }
 .dropbtn {
   background-color: var(--blue);
