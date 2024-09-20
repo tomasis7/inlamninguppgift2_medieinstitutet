@@ -511,12 +511,16 @@ a {
 .logoimg {
   display: flex;
   justify-content: center;
-  width: 90px;
-  height: 90px;
+  min-width: 90px;
+  min-height: 90px;
   border: #000000 8px solid;
   border-radius: 5px;
   margin-right: 10px;
   background-color: #c4d5ed;
+}
+
+.logolink {
+  all: unset;
 }
 
 .bluebox {
