@@ -409,7 +409,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: var(--font);
+  font-family: 'Arial Black', Gadget, sans-serif;;
   font-weight: var(--f-bold);
   /* position: absolute; */
   background-color: var(--blue);
@@ -430,6 +430,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .subsection_bottom {
@@ -439,7 +440,7 @@ a {
 .headliner {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0px 0px 0px 10px;
   width: 80%;
 }
@@ -447,7 +448,7 @@ a {
 .supporting {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0px 0px 0px 10px;
   width: 90%;
 }
@@ -455,12 +456,13 @@ a {
 .countrycode {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: .8rem;
+  margin: 0;
 }
 
 .date {
   color: black;
-  font-size: 10px;
+  font-size: .7rem;
   font-family: var(--font);
   font-weight: var(--f-bold);
   text-transform: uppercase;
@@ -469,7 +471,7 @@ a {
 
 .sale {
   color: black;
-  font-size: 10px;
+  font-size: .6em;
   font-family: var(--font);
   font-weight: var(--f-bold);
   text-transform: uppercase;
