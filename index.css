@@ -303,6 +303,15 @@ a {
   background-color: darkgrey;
 }
 
+.sog:hover .searchbtn {
+  background-color: darkgrey;
+}
+
+.sog {
+  position: relative;
+  display: inline-block;
+}
+
 .genre {
   /* width: 100%;
   height: 100%; */
