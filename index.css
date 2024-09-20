@@ -1,9 +1,5 @@
 /*# sourceMappingURL=index.css.map */
 
-@import url("footer.css");
-@import "header.css";
-@import "navbar.css";
-@import "section.css";
 @import url("media.css");
 
 :root {
