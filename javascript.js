@@ -20,3 +20,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+function kalendar_open() {
+  document.getElementById("id_dropdown-content").style.display = "block";
+}
+function genre_open() {
+  document.getElementById("id_dropdown-content1").style.display = "block";
+}
+function billeder_open() {
+  document.getElementById("id_dropdown-content2").style.display = "block";
+}
+function info_open() {
+  document.getElementById("id_dropdown-content3").style.display = "block";
+}
+function kontakt_open() {
+  document.getElementById("id_dropdown-content4").style.display = "block";
+}
