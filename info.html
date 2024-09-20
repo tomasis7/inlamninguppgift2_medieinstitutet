@@ -26,140 +26,168 @@
     crossorigin="anonymous"
   ></script>
   <style>
-    
     @media screen and (max-width: 375px) {
-      .menu_inside {
-        display: none;
+        body {
+          margin: 10px;
+        }
+
+        .menu_inside {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          /* flex-direction: column; */
+          max-height: 0;
+          overflow: hidden;
+          padding-left: 160px;
+          padding-right: 160px;
+          margin-top: -3px;
+        }
       }
-      .nav {
-        display: none;
-        flex-direction: column;
+      @media screen and (min-width: 376px) {
+        body {
+          margin: 10px;
+        }
+
+        .menu_inside {
+          display: flex;
+        }
+        .nav {
+          display: flex;
+          flex-direction: column;
+          /* max-height:0; */
+          overflow: visible;
+          margin-top: 10px;
+        }
+        .menu {
+          display: none;
+        }
+        .genre {
+          display: none;
+        }
+        .billeder {
+          display: none;
+        }
+        .info {
+          display: none;
+        }
+        .kontakt {
+          display: none;
+        }
       }
-    }
-    @media screen and (min-width: 376px) {
-      .menu_inside {
-        display: flex;
+      @media screen and (min-width: 744px) {
+        .menu_inside {
+          display: flex;
+        }
+        .nav {
+          display: flex;
+          flex-direction: row;
+        }
+        .menu {
+          display: none;
+        }
+        .genre {
+          display: none;
+        }
+        .billeder {
+          display: none;
+        }
+        .info {
+          display: none;
+        }
+        .kontakt {
+          display: none;
+        }
       }
-      .nav {
-        display: flex;
-        flex-direction: row;
-      }
-      .menu {
-        display: none;
-      }
-      .genre {
-        display: none;
-      }
-      .billeder {
-        display: none;
-      }
-      .info {
-        display: none;
-      }
-      .kontakt {
-        display: none;
-      }
-    }
-    @media screen and (min-width: 744px) {
-      .menu_inside {
-        display: flex;
-      }
-      .nav {
-        display: flex;
-        flex-direction: row;
-      }
-      .menu {
-        display: none;
-      }
-      .genre {
-        display: none;
-      }
-      .billeder {
-        display: none;
-      }
-      .info {
-        display: none;
-      }
-      .kontakt {
-        display: none;
-      }
-    }
-    @media screen and (min-width: 1100px) {
-      .menu_inside {
-        display: none;
-      }
-      .nav {
-        display: flex;
-        flex-direction: row;
-      }
-      .menu {
-        display: none;
+      @media screen and (min-width: 1100px) {
+        .menu_inside {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          flex-direction: row;
+        }
+        .menu {
+          display: none;
+        }
+
+        .genre {
+          display: flex;
+        }
+        .billeder {
+          display: flex;
+        }
+        .info {
+          display: flex;
+        }
+        .kontakt {
+          display: flex;
+        }
       }
 
-      .genre {
-        display: flex;
+      @media screen and (max-width: 744px) {
+        .bluebox {
+          display: none;
+        }
       }
-      .billeder {
-        display: flex;
-      }
-      .info {
-        display: flex;
-      }
-      .kontakt {
-        display: flex;
-      }
-    }
-  
-  @media screen and (max-width: 744px) {
-    .bluebox {
-        display: none;
-      }
-      
-  }
-   
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="headerlogo">
-        <div class="logo">
-          <div class="logoimg" id="loppe">
-            <img src="assets/loppelogonew.svg" alt="loppen logo" />
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="headerlogo">
+          <div class="logo">
+            <div class="logoimg" id="loppe">
+              <img src="assets/loppelogonew.svg" alt="loppen logo" />
+            </div>
+            <a href="index.html">
+            <div class="logotext">
+              <div class="logolopp">
+                <h1>LOPPEN</h1>
+              </div>
+              <div class="logochris">
+                <p>CHRISTIANIA</p>
+              </div>
+            </div>
+            </a>
+            <div class="bluebox"></div>
           </div>
-          <div class="logotext">
-            <div class="logolopp">
-              <h1>LOPPEN</h1>
-            </div>
-            <div class="logochris">
-              <p>CHRISTIANIA</p>
-            </div>
         </div>
-        <div class="bluebox">
+
+        <div id="loppensearchbar" class="searchbar">
+          <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
+          <div class="searchbar-open">
+            <form action="toTheSearchGnomes">
+              <input type="text" name="search" />
+              <button type="submit">SØG</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu">MENU<i class="bi bi-list"></i></div>
+
+        <div class="nav">
+          <div class="dropdown">
+            <button class="dropbtn">KALENDAR</button>
+            <div class="dropdown-content">
+              <a href="#">OKTOBER</a>
+              <a href="#">NOVEMBER</a>
+              <a href="#">DECEMBER</a>
+            </div>
+          </div>
+
+          <div class="genre"><a href="#">GENRE</a></div>
+          <div class="billeder"><a href="#">BILLEDER</a></div>
+          <div class="info"><a href="info.html">INFO</a></div>
+          <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
+          <div class="sog">
+            <button class="searchbtn" onclick="openSearch()">SØG</button>
+          </div>
+          <div class="menu_inside">
+            <a href="#">MENU<i class="bi bi-list"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="loppensearchbar" class="searchbar">
-      <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
-      <div class="searchbar-open">
-        <form action="toTheSearchGnomes">
-          <input type="text" name="search">
-          <button type="submit">SØG</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="menu">MENU<i class="bi bi-list"></i></div>
-    <div class="nav">
-      <div class="kalender">KALENDER</div>
-      <div class="genre">GENRE</div>
-      <div class="billeder">BILLEDER</div>
-      <div class="info"><a href="info.html">INFO</a></div>
-      <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
-      <div class="sog"><button class="searchbtn" onclick="openSearch()">SØG</button></div>
-      <div class="menu_inside">Menu<i class="bi bi-list"></i></div>
-    </div>
     <div class="info_container">
       <h2>INFO FOR ALL VISITORS:</h2>
 <p>	Opening hours:</p>
