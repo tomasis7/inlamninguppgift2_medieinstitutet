@@ -409,7 +409,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: 'Arial Black', Gadget, sans-serif;;
+  font-family: "Arial Black", Gadget, sans-serif;
   font-weight: var(--f-bold);
   /* position: absolute; */
   background-color: var(--blue);
@@ -456,13 +456,13 @@ a {
 .countrycode {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 0;
 }
 
 .date {
   color: black;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-family: var(--font);
   font-weight: var(--f-bold);
   text-transform: uppercase;
@@ -471,7 +471,7 @@ a {
 
 .sale {
   color: black;
-  font-size: .6em;
+  font-size: 0.6em;
   font-family: var(--font);
   font-weight: var(--f-bold);
   text-transform: uppercase;
@@ -668,4 +668,11 @@ a {
   border-radius: 5px;
   margin-top: 10px;
   padding-left: 10px;
+}
+
+.kalendar_x_btn {
+  padding: 24px;
+  cursor: pointer;
+  font-size: xx-large;
+  text-align: end;
 }

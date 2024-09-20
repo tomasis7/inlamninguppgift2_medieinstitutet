@@ -35,3 +35,7 @@ function info_open() {
 function kontakt_open() {
   document.getElementById("id_dropdown-content4").style.display = "block";
 }
+
+function kalendar_close() {
+  document.getElementById("id_dropdown-content").style.display = "none";
+}
