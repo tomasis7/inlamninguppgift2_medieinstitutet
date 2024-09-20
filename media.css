@@ -1,9 +1,10 @@
+
 @media screen and (max-width: 743px) {
   body {
     margin: 10px;
   }
 
-  .menu_inside {
+  .dropdown5 {
     display: none;
   }
   .nav {
@@ -21,13 +22,13 @@
     margin: 10px;
   }
 
-  .menu_inside {
+  .dropdown5 {
     display: flex;
   }
   .nav {
     display: flex;
     flex-direction: column;
-    
+
     overflow: visible;
     margin-top: 10px;
   }
@@ -51,22 +52,26 @@
   body {
     margin: 10px;
   }
-  .menu_inside {
+  .dropdown5 {
     display: flex;
   }
   .nav {
     display: flex;
     flex-direction: row;
+
     justify-content: center;
+
     margin-top: 10px;
+<<<<<<< HEAD
+    overflow: visible;
+=======
 
-    
-
+>>>>>>> 8400cf7b8a15a44c1b1dfe36c8802907cb5a4315
   }
   .menu {
     display: none;
     margin-top: 10px;
-    
+
   }
   .genre {
     display: none;
@@ -103,7 +108,7 @@
   body {
     margin: 10px;
   }
-  .menu_inside {
+  .dropdown5{
     display: none;
   }
   .nav {
