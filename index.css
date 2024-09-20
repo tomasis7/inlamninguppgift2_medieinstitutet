@@ -1,9 +1,10 @@
 /*# sourceMappingURL=index.css.map */
-@import "footer.css";
+
+@import url("footer.css");
 @import "header.css";
 @import "navbar.css";
 @import "section.css";
-@import "media.css";
+@import url("media.css");
 
 :root {
   --black: #000000;
