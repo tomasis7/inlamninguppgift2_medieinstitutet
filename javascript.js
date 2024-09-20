@@ -39,3 +39,9 @@ function kontakt_open() {
 function kalendar_close() {
   document.getElementById("id_dropdown-content").style.display = "none";
 }
+function genre_close() {
+  document.getElementById("id_dropdown-content1").style.display = "none";
+}
+function billeder_close() {
+  document.getElementById("id_dropdown-content2").style.display = "none";
+}
