@@ -35,6 +35,9 @@ function info_open() {
 function kontakt_open() {
   document.getElementById("id_dropdown-content4").style.display = "block";
 }
+function menu_open() {
+  document.getElementById("id_dropdown-content5").style.display = "block";
+}
 
 function kalendar_close() {
   document.getElementById("id_dropdown-content").style.display = "none";
@@ -44,4 +47,7 @@ function genre_close() {
 }
 function billeder_close() {
   document.getElementById("id_dropdown-content2").style.display = "none";
+}
+function menu_close() {
+  document.getElementById("id_dropdown-content5").style.display = "none";
 }

@@ -28,7 +28,7 @@
                 margin: 10px;
               }
 
-              .menu_inside {
+              .dropdown5 {
                 display: none;
               }
               .nav {
@@ -46,7 +46,7 @@
                 margin: 10px;
               }
 
-              .menu_inside {
+              .dropdown5 {
                 display: flex;
               }
               .nav {
@@ -76,7 +76,7 @@
               body {
                 margin: 10px;
               }
-              .menu_inside {
+              .dropdown5 {
                 display: flex;
               }
               .nav {
@@ -132,7 +132,7 @@
               body {
                 margin: 10px;
               }
-              .menu_inside {
+              .dropdown5{
                 display: none;
               }
               .nav {
@@ -265,9 +265,23 @@
           <div class="sog">
             <button class="searchbtn" onclick="openSearch()">SØG</button>
           </div>
-          <div class="menu_inside">
-            <a href="#">MENU<i class="bi bi-list"></i></a>
+
+          <div class="dropdown5">
+            <button class="dropbtn5" onclick="menu_open()">
+              MENU<i class="bi bi-list"></i>
+            </button>
+            <div class="dropdown-content5" id="id_dropdown-content5">
+              <span class="menu_x_btn" onclick="menu_close()">×</span>
+              <a href="#">GENRE</a>
+              <a href="#">BILLEDER</a>
+              <a href="info.html">INFO</a>
+              <a href="kontakt.html">KONTAKT</a>
+            </div>
           </div>
+
+          <!-- <div class="dropdown5">
+            <a href="#">MENU<i class="bi bi-list"></i></a>
+          </div> -->
         </div>
       </div>
 
