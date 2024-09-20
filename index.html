@@ -17,12 +17,16 @@
       crossorigin="anonymous"
     />
     <link href="index.css" rel="stylesheet" />
-    <link href="media.css" rel="stylesheet" />
     <!-- <link href="index.scss" rel="stylesheet" /> -->
     <script
       src="https://kit.fontawesome.com/9e70829e25.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+            @media screen and (max-width: 743px) {
+              body {
+                margin: 10px;
+              }
 
               .dropdown5 {
                 display: none;
@@ -212,6 +216,7 @@
           <div class="dropdown">
             <button class="dropbtn" onclick="kalendar_open()">KALENDAR</button>
             <div class="dropdown-content" id="id_dropdown-content">
+              <span class="kalendar_x_btn" onclick="kalendar_close()">×</span>
               <a href="#">OKTOBER</a>
               <a href="#">NOVEMBER</a>
               <a href="#">DECEMBER</a>

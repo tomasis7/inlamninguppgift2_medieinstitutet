@@ -3,6 +3,7 @@
 @import "header.css";
 @import "navbar.css";
 @import "section.css";
+@import "media.css";
 
 :root {
   --black: #000000;
