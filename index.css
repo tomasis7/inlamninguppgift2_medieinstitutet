@@ -174,7 +174,7 @@ footer .footerlinks a {
   align-items: center;
 }
 
-.band {
+section .band {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -186,51 +186,43 @@ footer .footerlinks a {
   box-sizing: border-box;
   align-items: center;
 }
-
-.band:nth-child(odd) {
+section .band:nth-child(odd) {
   background: #ffffff;
 }
-
-.band:nth-child(even) {
+section .band:nth-child(even) {
   background: var(--blue);
 }
-
-.subsection_top {
+section .subsection_top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.subsection_bottom {
+section .subsection_bottom {
   width: 100%;
 }
-
-.headliner {
+section .headliner {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 2rem;
   margin: 0px 0px 0px 10px;
   width: 80%;
 }
-
-.supporting {
+section .supporting {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.8rem;
   margin: 0px 0px 0px 10px;
   width: 90%;
 }
-
-.countrycode {
+section .countrycode {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.8rem;
   margin: 0;
 }
-
-.date {
+section .date {
   color: black;
   font-size: 0.7rem;
   font-family: var(--font);
@@ -238,8 +230,7 @@ footer .footerlinks a {
   text-transform: uppercase;
   margin: 10px 0px 0px 10px;
 }
-
-.sale {
+section .sale {
   color: black;
   font-size: 0.6em;
   font-family: var(--font);
@@ -635,59 +626,52 @@ footer .footerlinks a {
   text-align: end;
 }
 
-h1 {
+body h1 {
   font-size: xx-large;
   font-weight: bold;
 }
-
-h2 {
+body h2 {
   font-size: x-large;
   font-weight: bold;
 }
-
-h3 {
+body h3 {
   font-size: medium;
   font-weight: bold;
 }
-
-a {
+body a {
   text-decoration: inherit;
   font-family: Arial Helvetica sans-serif;
   font-weight: bold;
   line-height: 28.8px;
   color: #000;
 }
-
-.container {
+body .container {
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: center;
 }
 
-.kontaktpage {
+section .kontaktpage {
   border: #000 8px solid;
   border-radius: 5px;
   padding: 10px 0px 0px 10px;
 }
-
-.contactheading {
+section .contactheading {
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 10px;
 }
-
-.contactname {
+section .contactname {
   margin-bottom: 0;
 }
 
-.infolink {
+section .infolink {
   text-decoration: none;
   font-weight: 300;
   color: #000;
 }
-
-.info_container {
+section .info_container {
   border: #000 8px solid;
   border-radius: 5px;
   margin-top: 10px;
