@@ -1,38 +1,39 @@
 @use "base";
-
-.shows {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  /* position: absolute; */
-  margin: 10px 0px 0px 0px;
-  border: 8px solid #000000;
-  border-radius: 5px;
-  box-sizing: border-box;
-  align-items: center;
+body {
+  .shows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    /* position: absolute; */
+    margin: 10px 0px 0px 0px;
+    border: 8px solid base.$black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items: center;
+  }
 }
 section {
   .band {
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-weight: var(--f-bold);
+    font-family: base.$font;
+    font-weight: base.$fbold;
     /* position: absolute; */
-    background-color: var(--blue);
-    border: 0.5px solid #000000;
+    background-color: base.$blue;
+    border: 0.5px solid base.$black;
     box-sizing: border-box;
     align-items: center;
   }
 
   .band:nth-child(odd) {
-    background: #ffffff;
+    background: base.$white;
   }
 
   .band:nth-child(even) {
-    background: var(--blue);
+    background: base.$blue;
   }
 
   .subsection_top {
@@ -70,19 +71,19 @@ section {
   }
 
   .date {
-    color: black;
+    color: base.$black;
     font-size: 0.7rem;
-    font-family: var(--font);
-    font-weight: var(--f-bold);
+    font-family: base.$font;
+    font-weight: base.$fbold;
     text-transform: uppercase;
     margin: 10px 0px 0px 10px;
   }
 
   .sale {
-    color: black;
+    color: base.$black;
     font-size: 0.6em;
-    font-family: var(--font);
-    font-weight: var(--f-bold);
+    font-family: base.$font;
+    font-weight: base.$fbold;
     text-transform: uppercase;
     margin: 10px 10px 0px 0px;
   }

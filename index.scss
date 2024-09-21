@@ -1,9 +1,10 @@
 /*# sourceMappingURL=index.css.map */
 @use "base";
-@use "footer";
+@use "media";
 @use "header";
-@use "section";
 @use "navbar";
+@use "section";
+@use "footer";
 
 body {
   h1 {

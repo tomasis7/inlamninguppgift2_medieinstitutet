@@ -1,140 +1,142 @@
 @use "base";
-.logo {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
+header {
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
-.logotext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #c4d5ed;
-  border: #000000 8px solid;
-  border-radius: 5px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 90px;
-}
+  .logotext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: base.$blue;
+    border: base.$black 8px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+  }
 
-.logochris {
-  font-size: 24px;
-  letter-spacing: 8px;
-}
+  .logochris {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
 
-.logolopp h1 {
-  font-size: 52px;
-  font-weight: 1000;
-  letter-spacing: 4px;
-  line-height: 0.7;
-  margin: 5px 0px 0px 0px;
-  padding: 0;
-}
+  .logolopp h1 {
+    font-size: 52px;
+    font-weight: 1000;
+    letter-spacing: 4px;
+    line-height: 0.7;
+    margin: 5px 0px 0px 0px;
+    padding: 0;
+  }
 
-.logoimg {
-  display: flex;
-  justify-content: center;
-  min-width: 90px;
-  min-height: 90px;
-  border: #000000 8px solid;
-  border-radius: 5px;
-  margin-right: 10px;
-  background-color: #c4d5ed;
-}
+  .logoimg {
+    display: flex;
+    justify-content: center;
+    min-width: 90px;
+    min-height: 90px;
+    border: #000000 8px solid;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c4d5ed;
+  }
 
-.logolink {
-  all: unset;
-}
+  .logolink {
+    all: unset;
+  }
 
-.bluebox {
-  width: 50%;
-  height: 90px;
-  border: #000000 8px solid;
-  border-radius: 5px;
-  margin-left: 10px;
-  background-color: #c4d5ed;
-}
+  .bluebox {
+    width: 50%;
+    height: 90px;
+    border: #000000 8px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #c4d5ed;
+  }
 
-.logolopp h1 {
-  font-size: 52px;
-  font-weight: 1000;
-  letter-spacing: 4px;
-  line-height: 0.7;
-  margin: 5px 0px 0px 0px;
-  padding: 0;
-}
+  .logolopp h1 {
+    font-size: 52px;
+    font-weight: 1000;
+    letter-spacing: 4px;
+    line-height: 0.7;
+    margin: 5px 0px 0px 0px;
+    padding: 0;
+  }
 
-.searchbtn {
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  font-weight: var(--f-bold);
-  cursor: pointer;
-}
+  .searchbtn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: var(--f-bold);
+    cursor: pointer;
+  }
 
-.searchbtn:hover {
-  color: #343434;
-}
+  .searchbtn:hover {
+    color: #343434;
+  }
 
-.searchbar {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000ef;
-}
+  .searchbar {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000ef;
+  }
 
-.searchbar-open {
-  position: relative;
-  top: 35%;
-  width: 80%;
-  background-color: #ffffff;
-  text-align: center;
-  margin: auto;
-}
+  .searchbar-open {
+    position: relative;
+    top: 35%;
+    width: 80%;
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto;
+  }
 
-.searchbar .closebtn {
-  position: absolute;
-  top: 60px;
-  right: 80px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
+  .searchbar .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
 
-.searchbar .closebtn:hover {
-  color: #ccc;
-  transform: scale(1.1);
-}
+  .searchbar .closebtn:hover {
+    color: #ccc;
+    transform: scale(1.1);
+  }
 
-.searchbar input[type="text"] {
-  padding: 15px;
-  font-size: 20px;
-  border: none;
-  float: left;
-  width: 60%;
-  background: white;
-  border: #000000 solid 0.4px;
-  opacity: 1;
-}
+  .searchbar input[type="text"] {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    float: left;
+    width: 60%;
+    background: white;
+    border: #000000 solid 0.4px;
+    opacity: 1;
+  }
 
-.searchbar input[type="text"]:hover {
-  background: #f1f1f1;
-}
+  .searchbar input[type="text"]:hover {
+    background: #f1f1f1;
+  }
 
-.searchbar button {
-  width: 40%;
-  padding: 15px;
-  background: #ffffff;
-  font-size: 20px;
-  border: #000000 solid 0.4px;
-  cursor: pointer;
-}
+  .searchbar button {
+    width: 40%;
+    padding: 15px;
+    background: #ffffff;
+    font-size: 20px;
+    border: #000000 solid 0.4px;
+    cursor: pointer;
+  }
 
-.searchbar button:hover {
-  background: #bbb;
+  .searchbar button:hover {
+    background: #bbb;
+  }
 }
