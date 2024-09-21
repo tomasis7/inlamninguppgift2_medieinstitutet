@@ -6,7 +6,7 @@
   .dropdown5 {
     display: none;
   }
-  nav {
+  .nav {
     display: flex;
     /* flex-direction: column; */
     max-height: 0;
@@ -54,7 +54,7 @@
   .dropdown5 {
     display: flex;
   }
-  nav {
+  .nav {
     display: flex;
     flex-direction: row;
 
@@ -106,7 +106,7 @@
   .dropdown5 {
     display: none;
   }
-  nav {
+  .nav {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
