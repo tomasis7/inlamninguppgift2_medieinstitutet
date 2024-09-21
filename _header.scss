@@ -37,10 +37,10 @@ header {
     justify-content: center;
     min-width: 90px;
     min-height: 90px;
-    border: #000000 8px solid;
+    border: base.$black 8px solid;
     border-radius: 5px;
     margin-right: 10px;
-    background-color: #c4d5ed;
+    background-color: base.$black;
   }
 
   .logolink {
@@ -50,10 +50,10 @@ header {
   .bluebox {
     width: 50%;
     height: 90px;
-    border: #000000 8px solid;
+    border: base.$black 8px solid;
     border-radius: 5px;
     margin-left: 10px;
-    background-color: #c4d5ed;
+    background-color: base.$blue;
   }
 
   .logolopp h1 {
@@ -69,12 +69,12 @@ header {
     background: transparent;
     border: none;
     font-size: 24px;
-    font-weight: var(--f-bold);
+    font-weight: base.$fbold;
     cursor: pointer;
   }
 
   .searchbtn:hover {
-    color: #343434;
+    color: base.$hoverdark;
   }
 
   .searchbar {
@@ -85,14 +85,14 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #000000ef;
+    background-color: base.$black;
   }
 
   .searchbar-open {
     position: relative;
     top: 35%;
     width: 80%;
-    background-color: #ffffff;
+    background-color: base.$white;
     text-align: center;
     margin: auto;
   }
@@ -103,12 +103,12 @@ header {
     right: 80px;
     font-size: 60px;
     cursor: pointer;
-    color: white;
+    color: base.$white;
     transition: all 0.3s ease-in-out;
   }
 
   .searchbar .closebtn:hover {
-    color: #ccc;
+    color: base.$hoverlight;
     transform: scale(1.1);
   }
 
@@ -118,25 +118,25 @@ header {
     border: none;
     float: left;
     width: 60%;
-    background: white;
-    border: #000000 solid 0.4px;
+    background: base.$white;
+    border: base.$black solid 0.4px;
     opacity: 1;
   }
 
   .searchbar input[type="text"]:hover {
-    background: #f1f1f1;
+    background: base.$dropcolor;
   }
 
   .searchbar button {
     width: 40%;
     padding: 15px;
-    background: #ffffff;
+    background: base.$white;
     font-size: 20px;
-    border: #000000 solid 0.4px;
+    border: base.$black solid 0.4px;
     cursor: pointer;
   }
 
   .searchbar button:hover {
-    background: #bbb;
+    background: base.$hoverdark;
   }
 }

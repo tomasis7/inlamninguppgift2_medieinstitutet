@@ -143,10 +143,10 @@ header .logoimg {
   justify-content: center;
   min-width: 90px;
   min-height: 90px;
-  border: #000000 8px solid;
+  border: #000 8px solid;
   border-radius: 5px;
   margin-right: 10px;
-  background-color: #c4d5ed;
+  background-color: #000;
 }
 header .logolink {
   all: unset;
@@ -154,7 +154,7 @@ header .logolink {
 header .bluebox {
   width: 50%;
   height: 90px;
-  border: #000000 8px solid;
+  border: #000 8px solid;
   border-radius: 5px;
   margin-left: 10px;
   background-color: #c4d5ed;
@@ -171,11 +171,11 @@ header .searchbtn {
   background: transparent;
   border: none;
   font-size: 24px;
-  font-weight: var(--f-bold);
+  font-weight: bold;
   cursor: pointer;
 }
 header .searchbtn:hover {
-  color: #343434;
+  color: #333;
 }
 header .searchbar {
   height: 100%;
@@ -185,13 +185,13 @@ header .searchbar {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.937254902);
+  background-color: #000;
 }
 header .searchbar-open {
   position: relative;
   top: 35%;
   width: 80%;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
   margin: auto;
 }
@@ -201,11 +201,11 @@ header .searchbar .closebtn {
   right: 80px;
   font-size: 60px;
   cursor: pointer;
-  color: white;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 header .searchbar .closebtn:hover {
-  color: #ccc;
+  color: #999;
   transform: scale(1.1);
 }
 header .searchbar input[type=text] {
@@ -214,8 +214,8 @@ header .searchbar input[type=text] {
   border: none;
   float: left;
   width: 60%;
-  background: white;
-  border: #000000 solid 0.4px;
+  background: #fff;
+  border: #000 solid 0.4px;
   opacity: 1;
 }
 header .searchbar input[type=text]:hover {
@@ -224,13 +224,13 @@ header .searchbar input[type=text]:hover {
 header .searchbar button {
   width: 40%;
   padding: 15px;
-  background: #ffffff;
+  background: #fff;
   font-size: 20px;
-  border: #000000 solid 0.4px;
+  border: #000 solid 0.4px;
   cursor: pointer;
 }
 header .searchbar button:hover {
-  background: #bbb;
+  background: #333;
 }
 
 nav .menu {
@@ -252,26 +252,26 @@ nav .menu {
   margin-top: 10px;
 }
 nav .active:hover {
-  background-color: #ccc;
+  background-color: #999;
 }
 nav .nav {
   width: 100%;
   justify-content: space-around;
   position: relative;
-  border: 2px solid #000000;
-  background-color: var(--blue);
+  border: 2px solid #000;
+  background-color: #c4d5ed;
   box-sizing: border-box;
   transition: max-height 0.5s ease-out;
   text-decoration: inherit;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
   line-height: 28.8px;
-  color: #000000;
+  color: #000;
 }
 nav .dropbtn {
-  background-color: var(--blue);
-  color: var(--black);
-  font-weight: var(--f-bold);
+  background-color: #c4d5ed;
+  color: #000;
+  font-weight: bold;
   padding: 10px;
   font-size: 24px;
   border: none;
