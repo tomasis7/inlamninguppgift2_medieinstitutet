@@ -1,7 +1,4 @@
 /*# sourceMappingURL=index.css.map */
-
-@import url("media.css");
-
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -61,32 +58,14 @@ a {
 .active:hover {
   background-color: #ccc;
 }
-/* .menu:hover {
-  background-color: #ccc;
-} */
-/* .bi {
-  width: 100%;
-  height: 100%;
-}
-.bi-list {
-  width: 100%;
-  height: 100%;
-} */
 
 .nav {
-  /* position: relative; */
-  /* max-height: 375px; */
   width: 100%;
-  /* height: 100%; */
   justify-content: space-around;
-
   position: relative;
   border: 2px solid #000000;
   background-color: var(--blue);
-  /* margin: 30px;
-  padding: 30px; */
   box-sizing: border-box;
-
   transition: max-height 0.5s ease-out;
   text-decoration: inherit;
   font-family: var(--font);
@@ -372,62 +351,39 @@ a {
   font-weight: var(--f-bold);
   line-height: 28.8px;
   word-wrap: break-word;
-
   padding: 10px;
-  /* border: 1px solid #000000; */
 }
 .info {
-  /* width: 100%;
-  height: 100%; */
   color: black;
   font-size: 24px;
   font-family: var(--font);
   font-weight: var(--f-bold);
   line-height: 28.8px;
   word-wrap: break-word;
-
   padding: 10px;
-  /* border: 1px solid #000000; */
 }
 .kontakt {
-  /* width: 100%;
-  height: 100%; */
   color: black;
   font-size: 24px;
   font-family: var(--font);
   font-weight: var(--f-bold);
-  /* line-height: 28.8px; */
-  /* word-wrap: break-word; */
-
   padding: 10px;
-  /* border: 1px solid #000000; */
 }
 .sog {
-  /* width: 100%;
-  height: 100%; */
   color: black;
   font-size: 24px;
   font-family: var(--font);
   font-weight: var(--f-bold);
   line-height: 28.8px;
-  /* word-wrap: break-word; */
-
   padding: 10px;
-  /* border: 1px solid #000000; */
 }
 
 .menu_inside {
-  /* width: 100%;
-  height: 100%; */
   color: black;
   font-size: 24px;
   font-family: var(--font);
   font-weight: var(--f-bold);
-  /* line-height: 28.8px; */
-  /* word-wrap: break-word; */
-
   padding: 10px;
-  /* border: 1px solid #000000; */
 }
 
 .shows {
