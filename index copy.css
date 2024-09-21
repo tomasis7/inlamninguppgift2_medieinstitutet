@@ -1,29 +1,32 @@
 /*# sourceMappingURL=index.css.map */
-@use "base";
-@import "footer";
-@import "header";
-@import "section";
-@import "navbar";
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --font: Arial, Helvetica, sans-serif;
+  --f-bold: bold;
+  --blue: #c4d5ed;
+}
 
 h1 {
   font-size: xx-large;
-  font-weight: base.$fbold;
+  font-weight: var(--f-bold);
 }
 h2 {
   font-size: x-large;
-  font-weight: base.$fbold;
+  font-weight: var(--f-bold);
 }
 h3 {
   font-size: medium;
-  font-weight: base.$fbold;
+  font-weight: var(--f-bold);
 }
 
 a {
   text-decoration: inherit;
-  font-family: base.$font;
-  font-weight: base.$fbold;
+  font-family: var(--font);
+  font-weight: var(--f-bold);
   line-height: 28.8px;
-  color: base.$black;
+  color: #000000;
 }
 
 .container {
@@ -34,7 +37,7 @@ a {
 }
 
 .kontaktpage {
-  border: base.$black 8px solid;
+  border: #000000 8px solid;
   border-radius: 5px;
   padding: 10px 0px 0px 10px;
 }
@@ -52,11 +55,11 @@ a {
 .infolink {
   text-decoration: none;
   font-weight: 300;
-  color: base.$black;
+  color: #000000;
 }
 
 .info_container {
-  border: base.$black 8px solid;
+  border: #000000 8px solid;
   border-radius: 5px;
   margin-top: 10px;
   padding-left: 10px;
