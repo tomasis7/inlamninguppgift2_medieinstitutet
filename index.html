@@ -49,14 +49,19 @@
           <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
           <div class="searchbar-open">
             <form action="toTheSearchGnomes">
-              <input type="text" name="search" />
+              <input
+                type="text"
+                name="search"
+                aria-label="Sitewide"
+                role="search"
+              />
               <button type="submit">SØG</button>
             </form>
           </div>
         </div>
 
         <div class="menu">MENU<i class="bi bi-list"></i></div>
-<nav>
+
         <div class="nav">
           <div class="dropdown">
             <button class="dropbtn" onclick="kalendar_open()">KALENDAR</button>
@@ -89,17 +94,15 @@
           </div>
 
           <div class="dropdown3">
-            <a href="info.html">
-              <button class="dropbtn3" onclick="info_open()">INFO</button>
-              <div class="dropdown-content3" id="id_dropdown-content3"></div
-            ></a>
+            <a href="info.html" class="dropbtn3" onclick="info_open()">INFO</a>
+            <div class="dropdown-content3" id="id_dropdown-content3"></div>
           </div>
 
           <div class="dropdown4">
-            <a href="info.html">
-              <button class="dropbtn4" onclick="kontakt_open()">KONTAKT</button>
-              <div class="dropdown-content4" id="id_dropdown-content4"></div
-            ></a>
+            <a href="info.html" class="dropbtn4" onclick="kontakt_open()"
+              >KONTAKT</a
+            >
+            <div class="dropdown-content4" id="id_dropdown-content4"></div>
           </div>
 
           <!-- 
@@ -129,7 +132,7 @@
           </div> -->
         </div>
       </div>
-    </nav>
+
       <div class="shows">
         <div class="band">
           <div class="subsection_top">
