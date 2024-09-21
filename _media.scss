@@ -1,9 +1,9 @@
 @use "base";
+/* dropdown5 = menu_inside */
 @media screen and (max-width: 743px) {
   body {
     margin: 10px;
   }
-
   .dropdown5 {
     display: none;
   }
@@ -23,6 +23,7 @@
   body {
     margin: 10px;
   }
+
   .dropdown5 {
     display: flex;
   }
@@ -110,5 +111,11 @@
   }
   .dropbtn4 {
     display: flex;
+  }
+  .bi {
+    display: none;
+  }
+  .bi-list {
+    display: none;
   }
 }

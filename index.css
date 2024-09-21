@@ -1,4 +1,5 @@
 
+/* dropdown5 = menu_inside */
 @media screen and (max-width: 743px) {
   body {
     margin: 10px;
@@ -108,6 +109,12 @@
   }
   .dropbtn4 {
     display: flex;
+  }
+  .bi {
+    display: none;
+  }
+  .bi-list {
+    display: none;
   }
 }
 header .logo {
@@ -235,7 +242,6 @@ header .searchbar button:hover {
 
 nav .menu {
   cursor: pointer;
-  display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -324,7 +330,7 @@ nav .dropdown-content1 {
   z-index: 1;
 }
 nav .dropdown-content1 a {
-  color: black;
+  color: #000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -478,60 +484,6 @@ nav .dropdown5:hover .dropdown-content5 {
 nav .dropdown5:hover .dropbtn5 {
   background-color: darkgrey;
 }
-nav .genre {
-  /* width: 100%;
-  height: 100%; */
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  line-height: 28.8px;
-  word-wrap: break-word;
-  padding: 10px;
-  /* border: 1px solid #000000; */
-}
-nav .billeder {
-  /* width: 100%;
-  height: 100%; */
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  line-height: 28.8px;
-  word-wrap: break-word;
-  padding: 10px;
-}
-nav .info {
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  line-height: 28.8px;
-  word-wrap: break-word;
-  padding: 10px;
-}
-nav .kontakt {
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  padding: 10px;
-}
-nav .sog {
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  line-height: 28.8px;
-  padding: 10px;
-}
-nav .menu_inside {
-  color: black;
-  font-size: 24px;
-  font-family: var(--font);
-  font-weight: var(--f-bold);
-  padding: 10px;
-}
 nav .sog:hover .searchbtn {
   background-color: darkgrey;
 }
@@ -558,6 +510,12 @@ nav .billeder_x_btn {
   text-align: end;
 }
 nav .menu_x_btn {
+  padding: 24px;
+  cursor: pointer;
+  font-size: xx-large;
+  text-align: end;
+}
+nav .x_btn {
   padding: 24px;
   cursor: pointer;
   font-size: xx-large;
