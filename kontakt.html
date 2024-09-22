@@ -26,60 +26,103 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="headerlogo">
-          <div class="logo">
-            <div class="logoimg" id="loppe">
-              <img src="assets/loppelogonew.svg" alt="loppen logo" />
-            </div>
-            <div class="logotext">
-              <a class="logolink" href="index.html">
-              <div class="logolopp">
-                <h1>LOPPEN</h1>
+      <header>
+        <div class="header">
+          <div class="headerlogo">
+            <div class="logo">
+              <div class="logoimg" id="loppe">
+                <img src="assets/loppelogonew.svg" alt="loppen logo" />
               </div>
-              <div class="logochris">
-                <p>CHRISTIANIA</p>
+              <div class="logotext">
+                <div class="logolopp">
+                  <h1>LOPPEN</h1>
+                </div>
+                <div class="logochris">
+                  <p>CHRISTIANIA</p>
+                </div>
               </div>
-              </a>
-            </div>
-            <div class="bluebox"></div>
-          </div>
-        </div>
-
-        <div id="loppensearchbar" class="searchbar">
-          <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
-          <div class="searchbar-open">
-            <form action="toTheSearchGnomes">
-              <input type="text" name="search" />
-              <button type="submit">SØG</button>
-            </form>
-          </div>
-        </div>
-
-        <div class="menu">MENU<i class="bi bi-list"></i></div>
-
-        <div class="nav">
-          <div class="dropdown">
-            <button class="dropbtn">KALENDAR</button>
-            <div class="dropdown-content">
-              <a href="#">OKTOBER</a>
-              <a href="#">NOVEMBER</a>
-              <a href="#">DECEMBER</a>
+              <div class="bluebox"></div>
             </div>
           </div>
-
-          <div class="genre"><a href="#">GENRE</a></div>
-          <div class="billeder"><a href="#">BILLEDER</a></div>
-          <div class="info"><a href="info.html">INFO</a></div>
-          <div class="kontakt"><a href="kontakt.html">KONTAKT</a></div>
-          <div class="sog">
-            <button class="searchbtn" onclick="openSearch()">SØG</button>
+          <div id="loppensearchbar" class="searchbar">
+            <span class="closebtn" onclick="closeSearch()" title="Luk">×</span>
+            <div class="searchbar-open">
+              <form action="toTheSearchGnomes">
+                <input type="text" name="search" aria-label="Sitewide" />
+                <button type="submit">SØG</button>
+              </form>
+            </div>
           </div>
-          <div class="menu_inside">
-            <a href="#">MENU<i class="bi bi-list"></i></a>
-          </div>
+          <nav>
+            <div class="menu">MENU<i class="bi bi-list"></i></div>
+            <div class="nav">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="kalendar_open()">
+                  KALENDAR
+                </button>
+                <div class="dropdown-content" id="id_dropdown-content">
+                  <span class="kalendar_x_btn" onclick="kalendar_close()"
+                    >×</span
+                  >
+                  <a href="#">OKTOBER</a>
+                  <a href="#">NOVEMBER</a>
+                  <a href="#">DECEMBER</a>
+                </div>
+              </div>
+              <div class="dropdown1">
+                <button class="dropbtn1" onclick="genre_open()">GENRE</button>
+                <div class="dropdown-content1" id="id_dropdown-content1">
+                  <span class="genre_x_btn" onclick="genre_close()">×</span>
+                  <a href="#">PUNK</a>
+                  <a href="#">REGGAE</a>
+                  <a href="#">HIP HOP</a>
+                </div>
+              </div>
+              <div class="dropdown2">
+                <button class="dropbtn2" onclick="billeder_open()">
+                  BILLEDER
+                </button>
+                <div class="dropdown-content2" id="id_dropdown-content2">
+                  <span class="billeder_x_btn" onclick="billeder_close()"
+                    >×</span
+                  >
+                  <a href="#">2024</a>
+                  <a href="#">2023</a>
+                  <a href="#">2022</a>
+                </div>
+              </div>
+              <div class="dropdown3">
+                <a href="info.html" class="dropbtn3" onclick="info_open()"
+                  >INFO</a
+                >
+                <div class="dropdown-content3" id="id_dropdown-content3"></div>
+              </div>
+              <div class="dropdown4">
+                <a href="info.html" class="dropbtn4" onclick="kontakt_open()"
+                  >KONTAKT</a
+                >
+                <div class="dropdown-content4" id="id_dropdown-content4"></div>
+              </div>
+              <div class="sog">
+                <button class="searchbtn" onclick="openSearch()">SØG</button>
+              </div>
+              <div class="dropdown5">
+                <button class="dropbtn5" onclick="menu_open()">
+                  MENU<i class="bi bi-list"></i>
+                </button>
+                <div class="dropdown-content5" id="id_dropdown-content5">
+                  <span class="menu_x_btn" onclick="menu_close()">×</span>
+                  <a href="#">GENRE</a>
+                  <a href="#">BILLEDER</a>
+                  <a href="info.html">INFO</a>
+                  <a href="kontakt.html">KONTAKT</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-      </div>
+      </header>
+  <header>
       <div class="kontaktpage">
         <h2>KONTAKT</h2>
         <p><strong>MUSIK LOPPEN</strong></p>
@@ -125,7 +168,8 @@
 
 
       </div>
-
+    </main>
+    <footer>
       <div class="footer">
         <div class="socialmedia">
           <i class="fa-brands fa-instagram"></i>
@@ -137,6 +181,7 @@
           <a href="https://dansklive.dk/">Dansk Live</a>
         </div>
       </div>
+    </footer>
     </div>
     <script src="javascript.js"></script>
   </body>
