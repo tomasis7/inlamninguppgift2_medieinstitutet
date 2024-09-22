@@ -1,24 +1,27 @@
+@use "base";
+/* dropdown5 = menu_inside */
 @media screen and (max-width: 743px) {
-  body {
-    margin: 10px;
-  }
-
-  .dropdown5 {
+  .dropdown5 .dropbtn5 {
     display: none;
   }
   .nav {
     display: flex;
     max-height: 0;
     overflow: hidden;
-    padding-left: 160px;
-    padding-right: 160px;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-top: -3px;
   }
-}
-@media screen and (min-width: 744px) {
-  body {
-    margin: 10px;
+  .bluebox {
+    display: none;
   }
+  .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 744px) {
   .dropdown5 {
     display: flex;
   }
@@ -65,21 +68,18 @@
   }
 }
 @media screen and (min-width: 1100px) {
-  body {
-    margin: 10px;
-  }
   .dropdown5 {
     display: none;
   }
   .nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-top: 10px;
   }
   .menu {
     display: none;
   }
-
   .genre {
     display: flex;
   }
@@ -107,10 +107,7 @@
   .dropbtn4 {
     display: flex;
   }
-}
-
-@media screen and (max-width: 744px) {
-  .bluebox {
+  .dropbtn5 {
     display: none;
   }
 }

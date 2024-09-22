@@ -1,4 +1,70 @@
-@import "footer";
-@import "header";
-@import "section";
-@import "navbar";
+/*# sourceMappingURL=index.css.map */
+@use "base";
+@use "media";
+@use "header";
+@use "navbar";
+@use "section";
+@use "footer";
+
+body {
+  margin: 10px;
+
+  h1 {
+    font-size: xx-large;
+    font-weight: base.$fbold;
+  }
+  h2 {
+    font-size: x-large;
+    font-weight: base.$fbold;
+  }
+  h3 {
+    font-size: medium;
+    font-weight: base.$fbold;
+  }
+
+  a {
+    text-decoration: inherit;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    line-height: 28.8px;
+    color: base.$black;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  }
+}
+section {
+  .kontaktpage {
+    border: base.$black 8px solid;
+    border-radius: 5px;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .contactheading {
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .contactname {
+    margin-bottom: 0;
+  }
+}
+section {
+  .infolink {
+    text-decoration: none;
+    font-weight: 300;
+    color: base.$black;
+  }
+
+  .info_container {
+    border: base.$black 8px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+}

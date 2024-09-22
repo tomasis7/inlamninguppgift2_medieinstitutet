@@ -1,0 +1,93 @@
+@use "base";
+body {
+  section {
+    width: 100%;
+  }
+  .shows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    /* position: absolute; */
+    margin: 10px 0px 0px 0px;
+    border: 8px solid base.$black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+}
+section {
+  .band {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    /* position: absolute; */
+    background-color: base.$blue;
+    border: 0.5px solid base.$black;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .band:nth-child(odd) {
+    background: base.$white;
+  }
+
+  .band:nth-child(even) {
+    background: base.$blue;
+  }
+
+  .subsection_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .subsection_bottom {
+    width: 100%;
+  }
+
+  .headliner {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0px 0px 0px 10px;
+    width: 80%;
+  }
+
+  .supporting {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin: 0px 0px 0px 10px;
+    width: 90%;
+  }
+
+  .countrycode {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .date {
+    color: base.$black;
+    font-size: 0.7rem;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 10px;
+  }
+
+  .sale {
+    color: base.$black;
+    font-size: 0.6em;
+    font-family: base.$font;
+    font-weight: base.$fbold;
+    text-transform: uppercase;
+    margin: 10px 10px 0px 0px;
+  }
+}
