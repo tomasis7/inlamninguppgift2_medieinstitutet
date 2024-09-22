@@ -1,5 +1,8 @@
 @use "base";
 body {
+  section {
+    width: 100%;
+  }
   .shows {
     display: flex;
     flex-direction: column;
