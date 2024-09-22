@@ -18,6 +18,12 @@
   .bluebox {
     display: none;
   }
+  .menu {
+    display: flex;
+  }
+  .dropbtn5 {
+    display: none;
+  }
 }
 @media screen and (min-width: 744px) {
   body {
@@ -110,10 +116,7 @@
   .dropbtn4 {
     display: flex;
   }
-  .bi {
-    display: none;
-  }
-  .bi-list {
+  .dropbtn5 {
     display: none;
   }
 }
@@ -153,7 +156,7 @@ header .logoimg {
   border: #000 8px solid;
   border-radius: 5px;
   margin-right: 10px;
-  background-color: #000;
+  background-color: #c4d5ed;
 }
 header .logolink {
   all: unset;
@@ -301,20 +304,13 @@ nav .dropdown-content0 a {
   display: block;
 }
 nav .dropdown-content0 a:hover {
-  background-color: #ddd;
+  background-color: #999;
 }
 nav .dropdown0:hover .dropdown-content0 {
   display: block;
 }
 nav .dropdown0:hover .dropbtn0 {
-  background-color: darkgrey;
-}
-nav .sog:hover .searchbtn {
-  background-color: darkgrey;
-}
-nav .sog {
-  position: relative;
-  display: inline-block;
+  background-color: #999;
 }
 nav .x_btn {
   padding: 24px;

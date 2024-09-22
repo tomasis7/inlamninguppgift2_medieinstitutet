@@ -18,7 +18,14 @@
   .bluebox {
     display: none;
   }
+  .menu {
+    display: flex;
+  }
+  .dropbtn5 {
+    display: none;
+  }
 }
+
 @media screen and (min-width: 744px) {
   body {
     margin: 10px;
@@ -84,7 +91,6 @@
   .menu {
     display: none;
   }
-
   .genre {
     display: flex;
   }
@@ -112,10 +118,7 @@
   .dropbtn4 {
     display: flex;
   }
-  .bi {
-    display: none;
-  }
-  .bi-list {
+  .dropbtn5 {
     display: none;
   }
 }

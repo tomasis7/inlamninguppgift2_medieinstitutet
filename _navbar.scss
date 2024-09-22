@@ -2,7 +2,6 @@
 nav {
   .menu {
     cursor: pointer;
-    // display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -21,7 +20,6 @@ nav {
   .active:hover {
     background-color: base.$hoverlight;
   }
-
   .nav {
     width: 100%;
     justify-content: space-around;
@@ -67,7 +65,7 @@ nav {
   }
 
   .dropdown-content0 a:hover {
-    background-color: #ddd;
+    background-color: base.$hoverlight;
   }
 
   .dropdown0:hover .dropdown-content0 {
@@ -75,15 +73,9 @@ nav {
   }
 
   .dropdown0:hover .dropbtn0 {
-    background-color: darkgrey;
+    background-color: base.$hoverlight;
   }
-  .sog:hover .searchbtn {
-    background-color: darkgrey;
-  }
-  .sog {
-    position: relative;
-    display: inline-block;
-  }
+
   .x_btn {
     padding: 24px;
     cursor: pointer;
