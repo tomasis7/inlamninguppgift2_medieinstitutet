@@ -1,33 +1,10 @@
-header .bluebox,
-header .logotext {
-  height: 90px;
-  background-color: #c4d5ed;
-}
-header .bluebox,
-header .logoimg,
-header .logotext {
-  background-color: #c4d5ed;
-}
-body a,
-nav .nav {
-  text-decoration: inherit;
-}
-body a,
-nav .menu,
-nav .nav {
-  font-family: "Arial Black", Gadget, sans-serif;
-  line-height: 28.8px;
-}
+
 @media screen and (max-width: 743px) {
-  .bluebox,
   .dropdown5 .dropbtn5 {
     display: none;
   }
-  .menu,
   .nav {
     display: flex;
-  }
-  .nav {
     max-height: 0;
     overflow: hidden;
     justify-content: center;
@@ -35,119 +12,165 @@ nav .nav {
     padding-right: 100px;
     margin-top: -3px;
   }
+  .bluebox {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
 }
 @media screen and (min-width: 744px) {
-  .dropbtn,
-  .dropdown5,
-  .nav,
+  .dropdown5 {
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: visible;
+  }
+  .menu {
+    display: none;
+    margin-top: 10px;
+  }
+  .genre {
+    display: none;
+  }
+  .billeder {
+    display: none;
+  }
+  .info {
+    display: none;
+  }
+  .kontakt {
+    display: none;
+  }
   .sog {
     display: flex;
   }
-  .menu,
-  .nav {
-    margin-top: 10px;
+  .dropbtn {
+    display: flex;
   }
-  .nav {
-    flex-direction: row;
-    justify-content: center;
-    overflow: visible;
+  .dropbtn1 {
+    display: none;
   }
-  .billeder,
-  .dropbtn1,
-  .dropbtn2,
-  .dropbtn3,
-  .dropbtn4,
-  .genre,
-  .info,
-  .kontakt,
-  .menu {
+  .dropbtn2 {
+    display: none;
+  }
+  .dropbtn3 {
+    display: none;
+  }
+  .dropbtn4 {
     display: none;
   }
 }
 @media screen and (min-width: 1100px) {
-  .dropbtn5,
-  .dropdown5,
-  .menu {
+  .dropdown5 {
     display: none;
   }
-  .billeder,
-  .dropbtn,
-  .dropbtn1,
-  .dropbtn2,
-  .dropbtn3,
-  .dropbtn4,
-  .genre,
-  .info,
-  .kontakt,
   .nav {
     display: flex;
-  }
-  .nav {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
   }
-}
-header .logo,
-header .logoimg {
-  display: flex;
-  justify-content: center;
+  .menu {
+    display: none;
+  }
+  .genre {
+    display: flex;
+  }
+  .billeder {
+    display: flex;
+  }
+  .info {
+    display: flex;
+  }
+  .kontakt {
+    display: flex;
+  }
+  .dropbtn {
+    display: flex;
+  }
+  .dropbtn1 {
+    display: flex;
+  }
+  .dropbtn2 {
+    display: flex;
+  }
+  .dropbtn3 {
+    display: flex;
+  }
+  .dropbtn4 {
+    display: flex;
+  }
+  .dropbtn5 {
+    display: none;
+  }
 }
 header .logo {
+  display: flex;
   width: 100%;
-}
-body .shows,
-header .logotext {
-  flex-direction: column;
-  box-sizing: border-box;
+  justify-content: center;
 }
 header .logotext {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border: 8px solid #000;
+  background-color: #c4d5ed;
+  border: #000 8px solid;
   border-radius: 5px;
+  box-sizing: border-box;
   width: 100%;
+  height: 90px;
 }
 header .logochris {
   font-size: 24px;
   letter-spacing: 8px;
-}
-header .logoimg {
-  min-width: 90px;
-  min-height: 90px;
-  border: 8px solid #000;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-header .logolink {
-  all: unset;
-}
-header .bluebox {
-  width: 50%;
-  border: 8px solid #000;
-  border-radius: 5px;
-  margin-left: 10px;
 }
 header .logolopp h1 {
   font-size: 52px;
   font-weight: 1000;
   letter-spacing: 4px;
   line-height: 0.7;
-  margin: 5px 0 0;
+  margin: 5px 0px 0px 0px;
   padding: 0;
 }
-header .searchbar button,
-header .searchbar input[type="text"] {
-  padding: 15px;
-  background: #fff;
-  font-size: 20px;
-  border: 0.4px solid #000;
+header .logoimg {
+  display: flex;
+  justify-content: center;
+  min-width: 90px;
+  min-height: 90px;
+  border: #000 8px solid;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #c4d5ed;
+}
+header .logolink {
+  all: unset;
+}
+header .bluebox {
+  width: 50%;
+  height: 90px;
+  border: #000 8px solid;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #c4d5ed;
+}
+header .logolopp h1 {
+  font-size: 52px;
+  font-weight: 1000;
+  letter-spacing: 4px;
+  line-height: 0.7;
+  margin: 5px 0px 0px 0px;
+  padding: 0;
 }
 header .searchbtn {
-  background: 0 0;
+  background: transparent;
   border: none;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
   cursor: pointer;
 }
 header .searchbtn:hover {
@@ -171,13 +194,6 @@ header .searchbar-open {
   text-align: center;
   margin: auto;
 }
-nav .dropbtn0,
-nav .menu,
-nav .nav {
-  background-color: #c4d5ed;
-  font-weight: 700;
-  color: #000;
-}
 header .searchbar .closebtn {
   position: absolute;
   top: 60px;
@@ -185,59 +201,77 @@ header .searchbar .closebtn {
   font-size: 60px;
   cursor: pointer;
   color: #fff;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 header .searchbar .closebtn:hover {
   color: #999;
   transform: scale(1.1);
 }
-header .searchbar input[type="text"] {
+header .searchbar input[type=text] {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
   float: left;
   width: 60%;
+  background: #fff;
+  border: #000 solid 0.4px;
   opacity: 1;
 }
-header .searchbar input[type="text"]:hover {
+header .searchbar input[type=text]:hover {
   background: #f1f1f1;
 }
 header .searchbar button {
   width: 40%;
+  padding: 15px;
+  background: #fff;
+  font-size: 20px;
+  border: #000 solid 0.4px;
   cursor: pointer;
 }
 header .searchbar button:hover {
   background: #333;
 }
+
 nav .menu {
   cursor: pointer;
   justify-content: center;
   width: 100%;
   height: 100%;
+  color: #000;
   font-size: 24px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  line-height: 28.8px;
   word-wrap: break-word;
+  background-color: #c4d5ed;
   border: 8px solid #000;
   border-radius: 5px;
   box-sizing: border-box;
   margin-top: 10px;
 }
-nav .active:hover,
-nav .dropdown-content0 a:hover,
-nav .dropdown0:hover .dropbtn0 {
+nav .active:hover {
   background-color: #999;
 }
 nav .nav {
   width: 100%;
   position: relative;
   border: 2px solid #000;
+  background-color: #c4d5ed;
   box-sizing: border-box;
   transition: max-height 0.5s ease-out;
+  text-decoration: inherit;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  line-height: 28.8px;
+  color: #000;
 }
 nav .dropbtn0 {
+  background-color: #c4d5ed;
+  color: #000;
+  font-weight: bold;
   padding: 4px;
   font-size: 24px;
   border: none;
-}
-body h1,
-nav .x_btn {
-  font-size: xx-large;
 }
 nav .dropdown0 {
   position: relative;
@@ -248,7 +282,7 @@ nav .dropdown-content0 {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 nav .dropdown-content0 a {
@@ -257,49 +291,55 @@ nav .dropdown-content0 a {
   text-decoration: none;
   display: block;
 }
+nav .dropdown-content0 a:hover {
+  background-color: #999;
+}
 nav .dropdown0:hover .dropdown-content0 {
   display: block;
+}
+nav .dropdown0:hover .dropbtn0 {
+  background-color: #999;
 }
 nav .x_btn {
   padding: 24px;
   cursor: pointer;
+  font-size: xx-large;
   text-align: end;
 }
-body section,
-section .subsection_bottom {
+
+body section {
   width: 100%;
 }
 body .shows {
   display: flex;
+  flex-direction: column;
   width: 100%;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-weight: 700;
-  margin: 10px 0 0;
+  font-weight: bold;
+  /* position: absolute; */
+  margin: 10px 0px 0px 0px;
   border: 8px solid #000;
   border-radius: 5px;
+  box-sizing: border-box;
   align-items: center;
 }
+
 section .band {
   display: flex;
   flex-direction: column;
   width: 100%;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  /* position: absolute; */
   background-color: #c4d5ed;
   border: 0.5px solid #000;
   box-sizing: border-box;
   align-items: center;
 }
-section .headliner,
-section .supporting {
-  font-weight: 900;
-  margin: 0 0 0 10px;
-  text-transform: uppercase;
-}
 section .band:nth-child(odd) {
   background: #fff;
 }
-section .band:nth-child(2n) {
+section .band:nth-child(even) {
   background: #c4d5ed;
 }
 section .subsection_top {
@@ -309,25 +349,26 @@ section .subsection_top {
   align-items: center;
   width: 100%;
 }
+section .subsection_bottom {
+  width: 100%;
+}
 section .headliner {
+  text-transform: uppercase;
+  font-weight: 900;
   font-size: 2rem;
+  margin: 0px 0px 0px 10px;
   width: 80%;
 }
 section .supporting {
+  text-transform: uppercase;
+  font-weight: 900;
   font-size: 1.8rem;
+  margin: 0px 0px 0px 10px;
   width: 90%;
-}
-body a,
-body h1,
-body h2,
-body h3,
-section .countrycode,
-section .date,
-section .sale {
-  font-weight: 700;
 }
 section .countrycode {
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 0.8rem;
   margin: 0;
 }
@@ -335,29 +376,32 @@ section .date {
   color: #000;
   font-size: 0.7rem;
   font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
-  margin: 10px 0 0 10px;
+  margin: 10px 0px 0px 10px;
 }
 section .sale {
   color: #000;
   font-size: 0.6em;
   font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
-  margin: 10px 10px 0 0;
+  margin: 10px 10px 0px 0px;
 }
+
 footer {
   display: flex;
   flex-direction: row;
   gap: 40px;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #000;
+  border-top: #000 solid 1px;
   padding: 10px;
   margin-top: 10px;
 }
 footer .socialmedia i {
   font-size: 22px;
-  margin: 0 8px;
+  margin: 0px 8px 0px 8px;
 }
 footer .footerlinks a {
   text-decoration: none;
@@ -365,16 +409,27 @@ footer .footerlinks a {
   font-size: 12px;
   margin-left: 10px;
 }
+
 body {
   margin: 10px;
 }
+body h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
 body h2 {
   font-size: x-large;
+  font-weight: bold;
 }
 body h3 {
   font-size: medium;
+  font-weight: bold;
 }
 body a {
+  text-decoration: inherit;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  line-height: 28.8px;
   color: #000;
 }
 body .container {
@@ -383,10 +438,11 @@ body .container {
   position: relative;
   justify-content: center;
 }
+
 section .kontaktpage {
-  border: 8px solid #000;
+  border: #000 8px solid;
   border-radius: 5px;
-  padding: 10px 0 0 10px;
+  padding: 10px 0px 0px 10px;
   margin-top: 10px;
 }
 section .contactheading {
@@ -396,14 +452,15 @@ section .contactheading {
 section .contactname {
   margin-bottom: 0;
 }
+
 section .infolink {
   text-decoration: none;
   font-weight: 300;
   color: #000;
 }
 section .info_container {
-  border: 8px solid #000;
+  border: #000 8px solid;
   border-radius: 5px;
   margin-top: 10px;
-  padding: 10px 0 0 10px;
-}
+  padding: 10px 0px 0px 10px;
+}/*# sourceMappingURL=index.css.map */
