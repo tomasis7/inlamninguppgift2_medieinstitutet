@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
-    <title>Kontakt | LOPPEN</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LOPPEN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/assets/loppelogonew.svg" />
     <link
@@ -17,8 +16,6 @@
       crossorigin="anonymous"
     />
     <link href="index.css" rel="stylesheet" />
-    <link href="index.scss" rel="stylesheet" />
-    <link href="media.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/9e70829e25.js"
       crossorigin="anonymous"
@@ -34,19 +31,14 @@
                 <img src="assets/loppelogonew.svg" alt="loppen logo" />
               </div>
               <div class="logotext">
-
                 <div class="logolopp">
                   <h1>LOPPEN</h1>
                 </div>
                 <div class="logochris">
                   <p>CHRISTIANIA</p>
                 </div>
-
-              
-
               </div>
               <div class="bluebox"></div>
-
             </div>
           </div>
           <div id="loppensearchbar" class="searchbar">
@@ -61,62 +53,86 @@
           <nav>
             <div class="menu">MENU<i class="bi bi-list"></i></div>
             <div class="nav">
-              <div class="dropdown">
-                <button class="dropbtn" onclick="kalendar_open()">
+              <div class="dropdown dropdown0">
+                <button class="dropbtn dropbtn0" onclick="kalendar_open()">
                   KALENDAR
                 </button>
-                <div class="dropdown-content" id="id_dropdown-content">
-                  <span class="kalendar_x_btn" onclick="kalendar_close()"
-                    >×</span
-                  >
+                <div
+                  class="dropdown-content dropdown-content0"
+                  id="id_dropdown-content"
+                >
+                  <span class="x_btn" onclick="kalendar_close()">×</span>
                   <a href="#">OKTOBER</a>
                   <a href="#">NOVEMBER</a>
                   <a href="#">DECEMBER</a>
                 </div>
               </div>
-              <div class="dropdown1">
-                <button class="dropbtn1" onclick="genre_open()">GENRE</button>
-                <div class="dropdown-content1" id="id_dropdown-content1">
-                  <span class="genre_x_btn" onclick="genre_close()">×</span>
+              <div class="dropdown1 dropdown0">
+                <button class="dropbtn1 dropbtn0" onclick="genre_open()">
+                  GENRE
+                </button>
+                <div
+                  class="dropdown-content1 dropdown-content0"
+                  id="id_dropdown-content1"
+                >
+                  <span class="x_btn" onclick="genre_close()">×</span>
                   <a href="#">PUNK</a>
                   <a href="#">REGGAE</a>
                   <a href="#">HIP HOP</a>
                 </div>
               </div>
-              <div class="dropdown2">
-                <button class="dropbtn2" onclick="billeder_open()">
+              <div class="dropdown2 dropdown0">
+                <button class="dropbtn2 dropbtn0" onclick="billeder_open()">
                   BILLEDER
                 </button>
-                <div class="dropdown-content2" id="id_dropdown-content2">
-                  <span class="billeder_x_btn" onclick="billeder_close()"
-                    >×</span
-                  >
+                <div
+                  class="dropdown-content2 dropdown-content0"
+                  id="id_dropdown-content2"
+                >
+                  <span class="x_btn" onclick="billeder_close()">×</span>
                   <a href="#">2024</a>
                   <a href="#">2023</a>
                   <a href="#">2022</a>
                 </div>
               </div>
-              <div class="dropdown3">
-                <a href="info.html" class="dropbtn3" onclick="info_open()"
+              <div class="dropdown3 dropdown0">
+                <a
+                  href="info.html"
+                  class="dropbtn3 dropbtn0"
+                  onclick="info_open()"
                   >INFO</a
                 >
-                <div class="dropdown-content3" id="id_dropdown-content3"></div>
+                <div
+                  class="dropdown-content3 dropdown-content0"
+                  id="id_dropdown-content3"
+                ></div>
               </div>
-              <div class="dropdown4">
-                <a href="info.html" class="dropbtn4" onclick="kontakt_open()"
+              <div class="dropdown4 dropdown0">
+                <a
+                  href="kontakt.html"
+                  class="dropbtn4 dropbtn0"
+                  onclick="kontakt_open()"
                   >KONTAKT</a
                 >
-                <div class="dropdown-content4" id="id_dropdown-content4"></div>
+                <div
+                  class="dropdown-content4 dropdown-content0"
+                  id="id_dropdown-content4"
+                ></div>
               </div>
-              <div class="sog">
-                <button class="searchbtn" onclick="openSearch()">SØG</button>
+              <div class="sog dropdown0">
+                <button class="searchbtn dropbtn0" onclick="openSearch()">
+                  SØG
+                </button>
               </div>
-              <div class="dropdown5">
-                <button class="dropbtn5" onclick="menu_open()">
+              <div class="dropdown5 dropdown0 menuinside">
+                <button class="dropbtn5 dropbtn0" onclick="menu_open()">
                   MENU<i class="bi bi-list"></i>
                 </button>
-                <div class="dropdown-content5" id="id_dropdown-content5">
-                  <span class="menu_x_btn" onclick="menu_close()">×</span>
+                <div
+                  class="dropdown-content5 dropdown-content0"
+                  id="id_dropdown-content5"
+                >
+                  <span class="x_btn" onclick="menu_close()">×</span>
                   <a href="#">GENRE</a>
                   <a href="#">BILLEDER</a>
                   <a href="info.html">INFO</a>
@@ -127,64 +143,111 @@
           </nav>
         </div>
       </header>
-        <main>
-          <section>
-            <div class="kontaktpage">
-              <h2>KONTAKT</h2>
-              <p><strong>MUSIK LOPPEN</strong></p>
-              <p>Sydområdet 4B, 1. sal</p>
-              <p>1440 København K.</p>
-              <p><strong>CVR:</strong> 10303702</p>
-              <p><strong>Tel:</strong> (+45) 3257 8422</p>
-              <p><strong>Office hours:</strong> Monday to Friday from 10.00-14.00</p>
-              <p class="contactheading">Booking</p>
-              <p class="contactname">Jasper 'Japser' Jensen / <em>loppen@loppen.dk</em></p>
-              <p>Please remember to include links to your music and socials.</p>
-              <p class="contactheading">Communication & Administration</p>
-              <p class="contactname">Michelle Therese Smidt /<em>michelle@loppen.dk</em></p>
-              <p class="contactheading">PR & Marketing</p>
-              <p class="contactname">Anne Kirstine Knudsen /<em>anne@loppen.dk</em></p>
-              <p class="contactheading">Production</p>
-              <p class="contactname">Mina Göl Bertelsen /<em>mina@loppen.dk</em></p>
-              <p class="contactheading">Accounting & Finance</p>
-              <p class="contactname">Jesper Jensen /<em>okonomi@loppen.dk</em></p>
-              <p class="contactheading">Service</p>
-              <p class="contactname">Ann-Sofie Lundsholm /<em>ann-sofie@loppen.dk</em></p>
-              <p class="contactheading">Bar</p>
-              <p class="contactname">Theis Thomsen /</p>
-              <p class="contactheading">The music association Loppens board consists of: </p>
-              <p class="contactname">Helle Elena Andersen, <em>Head of board</em></p>
-              <p>Former head of secretarie at Spillesteder.dk (now Dansk Live) as well as 10 years as chairman of the patient association and 8 years as audience representative in Copenhagen's Music Committee.</p>
-              <p class="contactname">Susanne Romlund, <em>Treasurer</em></p>
-              <p>Self-employed accountant</p>
-              <p class="contactname">Janus Larsen, <em>Member of the Board</em></p>
-              <p>Soon-to-be accountant</p>
-              <p class="contactname">Saionara Reis, <em>Member of the Board</em></p>
-              <p>Specialist consultant in human rights and sustainable development at the Institute for Human Rights.</p>
-              <p class="contactname">Pernille Hagen Hess, <em>Member of the Board</em></p>
-              <p>Pedagogue</p>
-              <p class="contactname">Bjørn Winterskov, <em>Member of the Board</em></p>
-              <p>Land surveyor and co-responsible for operations in The Grey Hall / Den Grå Hal.</p>
-              <p class="contactname">Niels Vagn Brodahl, <em>Member of the Board</em></p>
-              <p>Designer and performer</p>
-              <h3>Social Media</h3>
-              <p><strong>Facebook: </strong><a href="http://www.facebook.com/musikloppen">www.facebook.com/musikloppen</a></p>
-              <p><strong>Instagram: </strong><a href="http://www.instagram.com/musikloppen">www.instagram.com/musikloppen</a></p>
-              <p class="contactheading">Loppen er støttet af Statens Kunstfond og Københavns Kommune Kultur- og Fritidsudvalg.</p>
-            </div>
-          </section>
-        </main>
+      <main>
+        <section>
+          <div class="kontaktpage">
+            <h2>KONTAKT</h2>
+            <p><strong>MUSIK LOPPEN</strong></p>
+            <p>Sydområdet 4B, 1. sal</p>
+            <p>1440 København K.</p>
+            <p><strong>CVR:</strong> 10303702</p>
+            <p><strong>Tel:</strong> (+45) 3257 8422</p>
+            <p>
+              <strong>Office hours:</strong> Monday to Friday from 10.00-14.00
+            </p>
+            <p class="contactheading">Booking</p>
+            <p class="contactname">
+              Jasper 'Japser' Jensen / <em>loppen@loppen.dk</em>
+            </p>
+            <p>Please remember to include links to your music and socials.</p>
+            <p class="contactheading">Communication & Administration</p>
+            <p class="contactname">
+              Michelle Therese Smidt /<em>michelle@loppen.dk</em>
+            </p>
+            <p class="contactheading">PR & Marketing</p>
+            <p class="contactname">
+              Anne Kirstine Knudsen /<em>anne@loppen.dk</em>
+            </p>
+            <p class="contactheading">Production</p>
+            <p class="contactname">
+              Mina Göl Bertelsen /<em>mina@loppen.dk</em>
+            </p>
+            <p class="contactheading">Accounting & Finance</p>
+            <p class="contactname">Jesper Jensen /<em>okonomi@loppen.dk</em></p>
+            <p class="contactheading">Service</p>
+            <p class="contactname">
+              Ann-Sofie Lundsholm /<em>ann-sofie@loppen.dk</em>
+            </p>
+            <p class="contactheading">Bar</p>
+            <p class="contactname">Theis Thomsen /</p>
+            <p class="contactheading">
+              The music association Loppens board consists of:
+            </p>
+            <p class="contactname">
+              Helle Elena Andersen, <em>Head of board</em>
+            </p>
+            <p>
+              Former head of secretarie at Spillesteder.dk (now Dansk Live) as
+              well as 10 years as chairman of the patient association and 8
+              years as audience representative in Copenhagen's Music Committee.
+            </p>
+            <p class="contactname">Susanne Romlund, <em>Treasurer</em></p>
+            <p>Self-employed accountant</p>
+            <p class="contactname">
+              Janus Larsen, <em>Member of the Board</em>
+            </p>
+            <p>Soon-to-be accountant</p>
+            <p class="contactname">
+              Saionara Reis, <em>Member of the Board</em>
+            </p>
+            <p>
+              Specialist consultant in human rights and sustainable development
+              at the Institute for Human Rights.
+            </p>
+            <p class="contactname">
+              Pernille Hagen Hess, <em>Member of the Board</em>
+            </p>
+            <p>Pedagogue</p>
+            <p class="contactname">
+              Bjørn Winterskov, <em>Member of the Board</em>
+            </p>
+            <p>
+              Land surveyor and co-responsible for operations in The Grey Hall /
+              Den Grå Hal.
+            </p>
+            <p class="contactname">
+              Niels Vagn Brodahl, <em>Member of the Board</em>
+            </p>
+            <p>Designer and performer</p>
+            <h3>Social Media</h3>
+            <p>
+              <strong>Facebook: </strong
+              ><a href="http://www.facebook.com/musikloppen"
+                >www.facebook.com/musikloppen</a
+              >
+            </p>
+            <p>
+              <strong>Instagram: </strong
+              ><a href="http://www.instagram.com/musikloppen"
+                >www.instagram.com/musikloppen</a
+              >
+            </p>
+            <p class="contactheading">
+              Loppen er støttet af Statens Kunstfond og Københavns Kommune
+              Kultur- og Fritidsudvalg.
+            </p>
+          </div>
+        </section>
+      </main>
       <footer>
-        <div class="footer">
-          <div class="socialmedia">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
-          <div class="footerlinks">
-            <a href="https://www.christiania.org/">Christiania</a>
-            <a href="https://dansklive.dk/">Dansk Live</a>
-          </div>
+        <div class="socialmedia">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="footerlinks">
+          <a href="https://www.christiania.org/">Christiania</a>
+          <a href="https://dansklive.dk/">Dansk Live</a>
         </div>
       </footer>
     </div>

@@ -42,12 +42,12 @@ section {
     border: base.$black 8px solid;
     border-radius: 5px;
     padding: 10px 0px 0px 10px;
+    margin-top: 10px;
   }
 
   .contactheading {
     font-weight: 700;
     margin-bottom: 0;
-    margin-top: 10px;
   }
 
   .contactname {
@@ -65,6 +65,6 @@ section {
     border: base.$black 8px solid;
     border-radius: 5px;
     margin-top: 10px;
-    padding-left: 10px;
+    padding: 10px 0px 0px 10px;
   }
 }
